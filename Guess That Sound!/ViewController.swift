@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+var test = 22
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
