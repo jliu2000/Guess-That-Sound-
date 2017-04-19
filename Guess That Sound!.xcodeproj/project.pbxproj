@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F945CC01EA7C30300AD56D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F945CBF1EA7C30300AD56D5 /* AppDelegate.swift */; };
+		3F945CC21EA7C30300AD56D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F945CC11EA7C30300AD56D5 /* ViewController.swift */; };
+		3F945CC51EA7C30300AD56D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F945CC31EA7C30300AD56D5 /* Main.storyboard */; };
+		3F945CC71EA7C30300AD56D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F945CC61EA7C30300AD56D5 /* Assets.xcassets */; };
+		3F945CCA1EA7C30300AD56D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F945CC81EA7C30300AD56D5 /* LaunchScreen.storyboard */; };
+		3F945CD51EA7C30300AD56D5 /* Guess_That_Sound_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F945CD41EA7C30300AD56D5 /* Guess_That_Sound_Tests.swift */; };
+		3F945CE01EA7C30300AD56D5 /* Guess_That_Sound_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F945CDF1EA7C30300AD56D5 /* Guess_That_Sound_UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F945CD11EA7C30300AD56D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F945CB41EA7C30300AD56D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F945CBB1EA7C30300AD56D5;
+			remoteInfo = "Guess That Sound!";
+		};
+		3F945CDC1EA7C30300AD56D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F945CB41EA7C30300AD56D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F945CBB1EA7C30300AD56D5;
+			remoteInfo = "Guess That Sound!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F945CBC1EA7C30300AD56D5 /* Guess That Sound!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess That Sound!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F945CBF1EA7C30300AD56D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F945CC11EA7C30300AD56D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F945CC41EA7C30300AD56D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F945CC61EA7C30300AD56D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F945CC91EA7C30300AD56D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F945CCB1EA7C30300AD56D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F945CD01EA7C30300AD56D5 /* Guess That Sound!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guess That Sound!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F945CD41EA7C30300AD56D5 /* Guess_That_Sound_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess_That_Sound_Tests.swift; sourceTree = "<group>"; };
+		3F945CD61EA7C30300AD56D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F945CDB1EA7C30300AD56D5 /* Guess That Sound!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guess That Sound!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F945CDF1EA7C30300AD56D5 /* Guess_That_Sound_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess_That_Sound_UITests.swift; sourceTree = "<group>"; };
+		3F945CE11EA7C30300AD56D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F945CB91EA7C30300AD56D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F945CCD1EA7C30300AD56D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F945CD81EA7C30300AD56D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F945CB31EA7C30300AD56D5 = {
+			isa = PBXGroup;
+			children = (
+				3F945CBE1EA7C30300AD56D5 /* Guess That Sound! */,
+				3F945CD31EA7C30300AD56D5 /* Guess That Sound!Tests */,
+				3F945CDE1EA7C30300AD56D5 /* Guess That Sound!UITests */,
+				3F945CBD1EA7C30300AD56D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F945CBD1EA7C30300AD56D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F945CBC1EA7C30300AD56D5 /* Guess That Sound!.app */,
+				3F945CD01EA7C30300AD56D5 /* Guess That Sound!Tests.xctest */,
+				3F945CDB1EA7C30300AD56D5 /* Guess That Sound!UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F945CBE1EA7C30300AD56D5 /* Guess That Sound! */ = {
+			isa = PBXGroup;
+			children = (
+				3F945CBF1EA7C30300AD56D5 /* AppDelegate.swift */,
+				3F945CC11EA7C30300AD56D5 /* ViewController.swift */,
+				3F945CC31EA7C30300AD56D5 /* Main.storyboard */,
+				3F945CC61EA7C30300AD56D5 /* Assets.xcassets */,
+				3F945CC81EA7C30300AD56D5 /* LaunchScreen.storyboard */,
+				3F945CCB1EA7C30300AD56D5 /* Info.plist */,
+			);
+			path = "Guess That Sound!";
+			sourceTree = "<group>";
+		};
+		3F945CD31EA7C30300AD56D5 /* Guess That Sound!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3F945CD41EA7C30300AD56D5 /* Guess_That_Sound_Tests.swift */,
+				3F945CD61EA7C30300AD56D5 /* Info.plist */,
+			);
+			path = "Guess That Sound!Tests";
+			sourceTree = "<group>";
+		};
+		3F945CDE1EA7C30300AD56D5 /* Guess That Sound!UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F945CDF1EA7C30300AD56D5 /* Guess_That_Sound_UITests.swift */,
+				3F945CE11EA7C30300AD56D5 /* Info.plist */,
+			);
+			path = "Guess That Sound!UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F945CBB1EA7C30300AD56D5 /* Guess That Sound! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F945CE41EA7C30300AD56D5 /* Build configuration list for PBXNativeTarget "Guess That Sound!" */;
+			buildPhases = (
+				3F945CB81EA7C30300AD56D5 /* Sources */,
+				3F945CB91EA7C30300AD56D5 /* Frameworks */,
+				3F945CBA1EA7C30300AD56D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guess That Sound!";
+			productName = "Guess That Sound!";
+			productReference = 3F945CBC1EA7C30300AD56D5 /* Guess That Sound!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F945CCF1EA7C30300AD56D5 /* Guess That Sound!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F945CE71EA7C30300AD56D5 /* Build configuration list for PBXNativeTarget "Guess That Sound!Tests" */;
+			buildPhases = (
+				3F945CCC1EA7C30300AD56D5 /* Sources */,
+				3F945CCD1EA7C30300AD56D5 /* Frameworks */,
+				3F945CCE1EA7C30300AD56D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F945CD21EA7C30300AD56D5 /* PBXTargetDependency */,
+			);
+			name = "Guess That Sound!Tests";
+			productName = "Guess That Sound!Tests";
+			productReference = 3F945CD01EA7C30300AD56D5 /* Guess That Sound!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F945CDA1EA7C30300AD56D5 /* Guess That Sound!UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F945CEA1EA7C30300AD56D5 /* Build configuration list for PBXNativeTarget "Guess That Sound!UITests" */;
+			buildPhases = (
+				3F945CD71EA7C30300AD56D5 /* Sources */,
+				3F945CD81EA7C30300AD56D5 /* Frameworks */,
+				3F945CD91EA7C30300AD56D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F945CDD1EA7C30300AD56D5 /* PBXTargetDependency */,
+			);
+			name = "Guess That Sound!UITests";
+			productName = "Guess That Sound!UITests";
+			productReference = 3F945CDB1EA7C30300AD56D5 /* Guess That Sound!UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F945CB41EA7C30300AD56D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jason Liu";
+				TargetAttributes = {
+					3F945CBB1EA7C30300AD56D5 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					3F945CCF1EA7C30300AD56D5 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F945CBB1EA7C30300AD56D5;
+					};
+					3F945CDA1EA7C30300AD56D5 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F945CBB1EA7C30300AD56D5;
+					};
+				};
+			};
+			buildConfigurationList = 3F945CB71EA7C30300AD56D5 /* Build configuration list for PBXProject "Guess That Sound!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F945CB31EA7C30300AD56D5;
+			productRefGroup = 3F945CBD1EA7C30300AD56D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F945CBB1EA7C30300AD56D5 /* Guess That Sound! */,
+				3F945CCF1EA7C30300AD56D5 /* Guess That Sound!Tests */,
+				3F945CDA1EA7C30300AD56D5 /* Guess That Sound!UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F945CBA1EA7C30300AD56D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F945CCA1EA7C30300AD56D5 /* LaunchScreen.storyboard in Resources */,
+				3F945CC71EA7C30300AD56D5 /* Assets.xcassets in Resources */,
+				3F945CC51EA7C30300AD56D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F945CCE1EA7C30300AD56D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F945CD91EA7C30300AD56D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F945CB81EA7C30300AD56D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F945CC21EA7C30300AD56D5 /* ViewController.swift in Sources */,
+				3F945CC01EA7C30300AD56D5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F945CCC1EA7C30300AD56D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F945CD51EA7C30300AD56D5 /* Guess_That_Sound_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F945CD71EA7C30300AD56D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F945CE01EA7C30300AD56D5 /* Guess_That_Sound_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F945CD21EA7C30300AD56D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F945CBB1EA7C30300AD56D5 /* Guess That Sound! */;
+			targetProxy = 3F945CD11EA7C30300AD56D5 /* PBXContainerItemProxy */;
+		};
+		3F945CDD1EA7C30300AD56D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F945CBB1EA7C30300AD56D5 /* Guess That Sound! */;
+			targetProxy = 3F945CDC1EA7C30300AD56D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F945CC31EA7C30300AD56D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F945CC41EA7C30300AD56D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F945CC81EA7C30300AD56D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F945CC91EA7C30300AD56D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F945CE21EA7C30300AD56D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F945CE31EA7C30300AD56D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F945CE51EA7C30300AD56D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Guess That Sound!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JL.Guess-That-Sound-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3F945CE61EA7C30300AD56D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Guess That Sound!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JL.Guess-That-Sound-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3F945CE81EA7C30300AD56D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Guess That Sound!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JL.Guess-That-Sound-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guess That Sound!.app/Guess That Sound!";
+			};
+			name = Debug;
+		};
+		3F945CE91EA7C30300AD56D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Guess That Sound!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JL.Guess-That-Sound-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guess That Sound!.app/Guess That Sound!";
+			};
+			name = Release;
+		};
+		3F945CEB1EA7C30300AD56D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Guess That Sound!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JL.Guess-That-Sound-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Guess That Sound!";
+			};
+			name = Debug;
+		};
+		3F945CEC1EA7C30300AD56D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Guess That Sound!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JL.Guess-That-Sound-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Guess That Sound!";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F945CB71EA7C30300AD56D5 /* Build configuration list for PBXProject "Guess That Sound!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F945CE21EA7C30300AD56D5 /* Debug */,
+				3F945CE31EA7C30300AD56D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F945CE41EA7C30300AD56D5 /* Build configuration list for PBXNativeTarget "Guess That Sound!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F945CE51EA7C30300AD56D5 /* Debug */,
+				3F945CE61EA7C30300AD56D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F945CE71EA7C30300AD56D5 /* Build configuration list for PBXNativeTarget "Guess That Sound!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F945CE81EA7C30300AD56D5 /* Debug */,
+				3F945CE91EA7C30300AD56D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F945CEA1EA7C30300AD56D5 /* Build configuration list for PBXNativeTarget "Guess That Sound!UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F945CEB1EA7C30300AD56D5 /* Debug */,
+				3F945CEC1EA7C30300AD56D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F945CB41EA7C30300AD56D5 /* Project object */;
+}
