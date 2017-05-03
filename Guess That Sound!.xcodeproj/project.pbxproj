@@ -22,7 +22,6 @@
 		3FD38AC81EBA39BC001330B5 /* Truck Horn Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38AC01EBA39BC001330B5 /* Truck Horn Sound Effect.mp3 */; };
 		3FD38AC91EBA39BC001330B5 /* Turbo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38AC11EBA39BC001330B5 /* Turbo.mp3 */; };
 		3FD38ACA1EBA39BC001330B5 /* Twang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38AC21EBA39BC001330B5 /* Twang.mp3 */; };
-		3FD38ACC1EBA3AD7001330B5 /* Bankrupt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38ACB1EBA3AD7001330B5 /* Bankrupt.wav */; };
 		69C1FC831EBA340100CFA9E8 /* SoundOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1FC821EBA340100CFA9E8 /* SoundOneViewController.swift */; };
 		69C1FC861EBA352000CFA9E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C1FC851EBA352000CFA9E8 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
@@ -66,7 +65,6 @@
 		3FD38AC01EBA39BC001330B5 /* Truck Horn Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Truck Horn Sound Effect.mp3"; sourceTree = "<group>"; };
 		3FD38AC11EBA39BC001330B5 /* Turbo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Turbo.mp3; sourceTree = "<group>"; };
 		3FD38AC21EBA39BC001330B5 /* Twang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Twang.mp3; sourceTree = "<group>"; };
-		3FD38ACB1EBA3AD7001330B5 /* Bankrupt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bankrupt.wav; sourceTree = "<group>"; };
 		69C1FC821EBA340100CFA9E8 /* SoundOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundOneViewController.swift; sourceTree = "<group>"; };
 		69C1FC851EBA352000CFA9E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -154,7 +152,6 @@
 		3FD38ABA1EBA39A6001330B5 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				3FD38ACB1EBA3AD7001330B5 /* Bankrupt.wav */,
 				3FD38ABB1EBA39BC001330B5 /* Bankrupt.mp3 */,
 				3FD38ABC1EBA39BC001330B5 /* Chance Igh.mp3 */,
 				3FD38ABD1EBA39BC001330B5 /* Kazoo Sound Effect.mp3 */,
@@ -289,7 +286,6 @@
 				3FD38AC41EBA39BC001330B5 /* Chance Igh.mp3 in Resources */,
 				3FD38AC61EBA39BC001330B5 /* Nail Gun -  Sound effects.mp3 in Resources */,
 				3FD38ACA1EBA39BC001330B5 /* Twang.mp3 in Resources */,
-				3FD38ACC1EBA3AD7001330B5 /* Bankrupt.wav in Resources */,
 				3FD38AC71EBA39BC001330B5 /* Storm.mp3 in Resources */,
 				3FD38AC31EBA39BC001330B5 /* Bankrupt.mp3 in Resources */,
 				3F945CC71EA7C30300AD56D5 /* Assets.xcassets in Resources */,
