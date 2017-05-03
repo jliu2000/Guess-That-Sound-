@@ -15,6 +15,8 @@
 		3F945CCA1EA7C30300AD56D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F945CC81EA7C30300AD56D5 /* LaunchScreen.storyboard */; };
 		3F945CD51EA7C30300AD56D5 /* Guess_That_Sound_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F945CD41EA7C30300AD56D5 /* Guess_That_Sound_Tests.swift */; };
 		3F945CE01EA7C30300AD56D5 /* Guess_That_Sound_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F945CDF1EA7C30300AD56D5 /* Guess_That_Sound_UITests.swift */; };
+		69C1FC831EBA340100CFA9E8 /* SoundOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1FC821EBA340100CFA9E8 /* SoundOneViewController.swift */; };
+		69C1FC861EBA352000CFA9E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C1FC851EBA352000CFA9E8 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3F945CDB1EA7C30300AD56D5 /* Guess That Sound!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guess That Sound!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F945CDF1EA7C30300AD56D5 /* Guess_That_Sound_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess_That_Sound_UITests.swift; sourceTree = "<group>"; };
 		3F945CE11EA7C30300AD56D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C1FC821EBA340100CFA9E8 /* SoundOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundOneViewController.swift; sourceTree = "<group>"; };
+		69C1FC851EBA352000CFA9E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C1FC861EBA352000CFA9E8 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 				3F945CD31EA7C30300AD56D5 /* Guess That Sound!Tests */,
 				3F945CDE1EA7C30300AD56D5 /* Guess That Sound!UITests */,
 				3F945CBD1EA7C30300AD56D5 /* Products */,
+				69C1FC841EBA352000CFA9E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +109,7 @@
 				3F945CC11EA7C30300AD56D5 /* ViewController.swift */,
 				3F7C4E9B1EB8E8F200674132 /* sounds */,
 				3F945CC31EA7C30300AD56D5 /* Main.storyboard */,
+				69C1FC821EBA340100CFA9E8 /* SoundOneViewController.swift */,
 				3F945CC61EA7C30300AD56D5 /* Assets.xcassets */,
 				3F945CC81EA7C30300AD56D5 /* LaunchScreen.storyboard */,
 				3F945CCB1EA7C30300AD56D5 /* Info.plist */,
@@ -126,6 +133,14 @@
 				3F945CE11EA7C30300AD56D5 /* Info.plist */,
 			);
 			path = "Guess That Sound!UITests";
+			sourceTree = "<group>";
+		};
+		69C1FC841EBA352000CFA9E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69C1FC851EBA352000CFA9E8 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C1FC831EBA340100CFA9E8 /* SoundOneViewController.swift in Sources */,
 				3F945CC21EA7C30300AD56D5 /* ViewController.swift in Sources */,
 				3F945CC01EA7C30300AD56D5 /* AppDelegate.swift in Sources */,
 			);

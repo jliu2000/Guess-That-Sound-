@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dPb-Ty-JVF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dPb-Ty-JVF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="134.48275862068968"/>
         </scene>
-        <!--View Controller-->
+        <!--SoundOne-->
         <scene sceneID="eqE-NE-QHZ">
             <objects>
-                <viewController id="G79-Ko-TiQ" sceneMemberID="viewController">
+                <viewController title="SoundOne" id="G79-Ko-TiQ" customClass="SoundOneViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="idA-OS-PWT"/>
                         <viewControllerLayoutGuide type="bottom" id="Njb-sA-O2r"/>
@@ -102,6 +102,14 @@
                                 <state key="normal" title="Incorrect Answer"/>
                                 <connections>
                                     <segue destination="vxY-Xg-PWO" kind="show" id="I1l-A9-dAe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyi-jM-rXr">
+                                <rect key="frame" x="141" y="148" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSoundOne:" destination="G79-Ko-TiQ" eventType="touchUpInside" id="4zJ-q2-pEJ"/>
                                 </connections>
                             </button>
                         </subviews>
