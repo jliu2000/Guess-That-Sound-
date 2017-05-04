@@ -24,6 +24,9 @@
 		3FD38ACA1EBA39BC001330B5 /* Twang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38AC21EBA39BC001330B5 /* Twang.mp3 */; };
 		69C1FC831EBA340100CFA9E8 /* SoundOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1FC821EBA340100CFA9E8 /* SoundOneViewController.swift */; };
 		69C1FC861EBA352000CFA9E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C1FC851EBA352000CFA9E8 /* AVFoundation.framework */; };
+		69C1FC891EBB827A00CFA9E8 /* SoundTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1FC881EBB827A00CFA9E8 /* SoundTwoViewController.swift */; };
+		69C1FC8B1EBB83CC00CFA9E8 /* SoundThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1FC8A1EBB83CC00CFA9E8 /* SoundThreeViewController.swift */; };
+		69C1FC8D1EBB83E000CFA9E8 /* SoundFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1FC8C1EBB83E000CFA9E8 /* SoundFourViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		3FD38AC21EBA39BC001330B5 /* Twang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Twang.mp3; sourceTree = "<group>"; };
 		69C1FC821EBA340100CFA9E8 /* SoundOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundOneViewController.swift; sourceTree = "<group>"; };
 		69C1FC851EBA352000CFA9E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		69C1FC881EBB827A00CFA9E8 /* SoundTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundTwoViewController.swift; sourceTree = "<group>"; };
+		69C1FC8A1EBB83CC00CFA9E8 /* SoundThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundThreeViewController.swift; sourceTree = "<group>"; };
+		69C1FC8C1EBB83E000CFA9E8 /* SoundFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundFourViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +128,10 @@
 				3F945CBF1EA7C30300AD56D5 /* AppDelegate.swift */,
 				3F945CC11EA7C30300AD56D5 /* ViewController.swift */,
 				3F945CC31EA7C30300AD56D5 /* Main.storyboard */,
+				69C1FC8A1EBB83CC00CFA9E8 /* SoundThreeViewController.swift */,
+				69C1FC8C1EBB83E000CFA9E8 /* SoundFourViewController.swift */,
 				69C1FC821EBA340100CFA9E8 /* SoundOneViewController.swift */,
+				69C1FC881EBB827A00CFA9E8 /* SoundTwoViewController.swift */,
 				3F945CC61EA7C30300AD56D5 /* Assets.xcassets */,
 				3F945CC81EA7C30300AD56D5 /* LaunchScreen.storyboard */,
 				3F945CCB1EA7C30300AD56D5 /* Info.plist */,
@@ -315,7 +324,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				69C1FC831EBA340100CFA9E8 /* SoundOneViewController.swift in Sources */,
+				69C1FC891EBB827A00CFA9E8 /* SoundTwoViewController.swift in Sources */,
+				69C1FC8D1EBB83E000CFA9E8 /* SoundFourViewController.swift in Sources */,
 				3F945CC21EA7C30300AD56D5 /* ViewController.swift in Sources */,
+				69C1FC8B1EBB83CC00CFA9E8 /* SoundThreeViewController.swift in Sources */,
 				3F945CC01EA7C30300AD56D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

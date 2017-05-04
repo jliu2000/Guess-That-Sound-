@@ -160,10 +160,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="134.48275862068968"/>
         </scene>
-        <!--View Controller-->
+        <!--Sound Two-->
         <scene sceneID="Su0-Vd-BV5">
             <objects>
-                <viewController id="haZ-Gj-emY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sound Two" title="Sound Two" id="haZ-Gj-emY" customClass="SoundTwoViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cTc-64-VAN"/>
                         <viewControllerLayoutGuide type="bottom" id="egf-Ui-Tdh"/>
@@ -201,6 +201,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZc-KP-G7l">
+                                <rect key="frame" x="149" y="135" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSoundTwoOnButtonTapped:" destination="haZ-Gj-emY" eventType="touchUpInside" id="AhN-L8-6lK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -213,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="2743" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Sound Three-->
         <scene sceneID="KPm-2P-hOU">
             <objects>
-                <viewController id="KS4-Ai-aVn" sceneMemberID="viewController">
+                <viewController title="Sound Three" id="KS4-Ai-aVn" customClass="SoundThreeViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zEL-y9-EER"/>
                         <viewControllerLayoutGuide type="bottom" id="HCh-wT-qzz"/>
@@ -254,6 +262,14 @@
                                     <segue destination="qdn-j8-0lf" kind="show" id="f0v-0R-rNr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8U-Vj-8gI">
+                                <rect key="frame" x="149" y="139" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSoundThreeOnButtonTapped:" destination="KS4-Ai-aVn" eventType="touchUpInside" id="0vj-QT-Zoz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -266,10 +282,10 @@
             </objects>
             <point key="canvasLocation" x="3703" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Sound Four-->
         <scene sceneID="DcP-6c-I8m">
             <objects>
-                <viewController id="qdn-j8-0lf" sceneMemberID="viewController">
+                <viewController title="Sound Four" id="qdn-j8-0lf" customClass="SoundFourViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wqk-wa-81h"/>
                         <viewControllerLayoutGuide type="bottom" id="5YH-AL-3Cl"/>
@@ -305,6 +321,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4l-HW-zcF">
+                                <rect key="frame" x="149" y="139" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSoundFourOnButtonTapped:" destination="qdn-j8-0lf" eventType="touchUpInside" id="8BY-sZ-2Ri"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -413,10 +437,10 @@
             </objects>
             <point key="canvasLocation" x="6340" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Sound Four-->
         <scene sceneID="RFx-qs-sUY">
             <objects>
-                <viewController id="1bp-t7-p5e" sceneMemberID="viewController">
+                <viewController title="Sound Four" id="1bp-t7-p5e" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bKL-y8-4jx"/>
                         <viewControllerLayoutGuide type="bottom" id="vkW-mw-C3Z"/>
@@ -451,6 +475,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ei2-y9-ifP">
+                                <rect key="frame" x="164" y="148" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
