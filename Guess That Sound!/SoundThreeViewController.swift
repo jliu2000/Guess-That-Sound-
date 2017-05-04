@@ -9,9 +9,10 @@
 import UIKit
 import AVFoundation
 class SoundThreeViewController: UIViewController {
-    var audioBegin = AVAudioPlayer()
     
+    var audioBegin = AVAudioPlayer()
     var turbo = URL(fileURLWithPath: Bundle.main.path(forResource: "Turbo", ofType: "mp3")!)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,8 +30,8 @@ class SoundThreeViewController: UIViewController {
         {
             print("Error")
         }
-        audioBegin.prepareToPlay()
-        audioBegin.play()
+            audioBegin.prepareToPlay()
+            audioBegin.play()
     }
 
 }

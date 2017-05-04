@@ -9,9 +9,10 @@
 import UIKit
 import AVFoundation
 class SoundFourViewController: UIViewController {
-    var audioBegin = AVAudioPlayer()
     
+    var audioBegin = AVAudioPlayer()
     var nailGun = URL(fileURLWithPath: Bundle.main.path(forResource: "Nail Gun", ofType: "mp3")!)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,13 +23,13 @@ class SoundFourViewController: UIViewController {
     
     do
     {
-    try audioBegin = AVAudioPlayer(contentsOf: nailGun, fileTypeHint: AVFileTypeMPEGLayer3)
+        try audioBegin = AVAudioPlayer(contentsOf: nailGun, fileTypeHint: AVFileTypeMPEGLayer3)
     }
     catch
     {
-    print("Error")
+        print("Error")
     }
-    audioBegin.prepareToPlay()
-    audioBegin.play()
+        audioBegin.prepareToPlay()
+        audioBegin.play()
     }
 }

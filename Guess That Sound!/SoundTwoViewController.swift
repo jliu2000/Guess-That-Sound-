@@ -10,8 +10,8 @@ import UIKit
 import AVFoundation
 
 class SoundTwoViewController: UIViewController {
-    var audioBegin = AVAudioPlayer()
     
+    var audioBegin = AVAudioPlayer()
     var storm = URL(fileURLWithPath: Bundle.main.path(forResource: "Storm", ofType: "mp3")!)
 
     override func viewDidLoad() {
@@ -30,6 +30,7 @@ class SoundTwoViewController: UIViewController {
         {
             print("Error")
         }
+        
         audioBegin.prepareToPlay()
         audioBegin.play()
         

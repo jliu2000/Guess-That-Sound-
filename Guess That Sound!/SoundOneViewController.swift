@@ -10,8 +10,8 @@ import UIKit
 import AVFoundation
 
 class SoundOneViewController: UIViewController {
-var audioBegin = AVAudioPlayer()
     
+    var audioBegin = AVAudioPlayer()
     var bankrupt = URL(fileURLWithPath: Bundle.main.path(forResource: "Bankrupt", ofType: "mp3")!)
     
     override func viewDidLoad() {
@@ -31,6 +31,7 @@ var audioBegin = AVAudioPlayer()
         }
         audioBegin.prepareToPlay()
         audioBegin.play()
+        
     }
     }
 
