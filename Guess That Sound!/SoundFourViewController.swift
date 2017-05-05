@@ -15,20 +15,20 @@ class SoundFourViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func playSoundFourOnButtonTapped(_ sender: UIButton) {
     
-    do
-    {
-        try audioBegin = AVAudioPlayer(contentsOf: nailGun, fileTypeHint: AVFileTypeMPEGLayer3)
-    }
-    catch
-    {
-        print("Error")
-    }
+    @IBAction func playSoundFourOnButtonTapped(_ sender: UIButton) {
+        
+        do
+        {
+            try audioBegin = AVAudioPlayer(contentsOf: nailGun, fileTypeHint: AVFileTypeMPEGLayer3)
+        }
+        catch
+        {
+            print("Error")
+        }
         audioBegin.prepareToPlay()
         audioBegin.play()
     }

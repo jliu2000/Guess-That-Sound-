@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="134.48275862068968"/>
         </scene>
-        <!--SoundOne-->
+        <!--Sound One View Controller-->
         <scene sceneID="eqE-NE-QHZ">
             <objects>
-                <viewController title="SoundOne" id="G79-Ko-TiQ" customClass="SoundOneViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G79-Ko-TiQ" customClass="SoundOneViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="idA-OS-PWT"/>
                         <viewControllerLayoutGuide type="bottom" id="Njb-sA-O2r"/>
@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="134.48275862068968"/>
         </scene>
-        <!--Sound Two-->
+        <!--Sound Two View Controller-->
         <scene sceneID="Su0-Vd-BV5">
             <objects>
-                <viewController storyboardIdentifier="Sound Two" title="Sound Two" id="haZ-Gj-emY" customClass="SoundTwoViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sound Two" id="haZ-Gj-emY" customClass="SoundTwoViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cTc-64-VAN"/>
                         <viewControllerLayoutGuide type="bottom" id="egf-Ui-Tdh"/>
@@ -236,10 +236,10 @@
             </objects>
             <point key="canvasLocation" x="2743" y="134"/>
         </scene>
-        <!--Sound Three-->
+        <!--Sound Three View Controller-->
         <scene sceneID="KPm-2P-hOU">
             <objects>
-                <viewController title="Sound Three" id="KS4-Ai-aVn" customClass="SoundThreeViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KS4-Ai-aVn" customClass="SoundThreeViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zEL-y9-EER"/>
                         <viewControllerLayoutGuide type="bottom" id="HCh-wT-qzz"/>
@@ -303,10 +303,10 @@
             </objects>
             <point key="canvasLocation" x="3703" y="134"/>
         </scene>
-        <!--Sound Four-->
+        <!--Sound Four View Controller-->
         <scene sceneID="DcP-6c-I8m">
             <objects>
-                <viewController title="Sound Four" id="qdn-j8-0lf" customClass="SoundFourViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qdn-j8-0lf" customClass="SoundFourViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wqk-wa-81h"/>
                         <viewControllerLayoutGuide type="bottom" id="5YH-AL-3Cl"/>
@@ -370,10 +370,10 @@
             </objects>
             <point key="canvasLocation" x="4607" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Sound Five View Controller-->
         <scene sceneID="YLV-U2-wim">
             <objects>
-                <viewController id="MjO-B2-USp" sceneMemberID="viewController">
+                <viewController id="MjO-B2-USp" customClass="SoundFiveViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kSD-Fq-EYo"/>
                         <viewControllerLayoutGuide type="bottom" id="zfE-IV-hWe"/>
@@ -413,6 +413,9 @@
                                     <constraint firstAttribute="width" constant="82" id="mE2-Xs-DYc"/>
                                 </constraints>
                                 <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSoundFiveButton:" destination="MjO-B2-USp" eventType="touchUpInside" id="3ik-ej-W0o"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -437,10 +440,10 @@
             </objects>
             <point key="canvasLocation" x="5453.6000000000004" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Sound Six View Controller-->
         <scene sceneID="2ay-AX-vsP">
             <objects>
-                <viewController id="Gmr-gA-nzZ" sceneMemberID="viewController">
+                <viewController id="Gmr-gA-nzZ" customClass="SoundSixViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DdX-YM-EHb"/>
                         <viewControllerLayoutGuide type="bottom" id="hUM-5o-R3e"/>
@@ -469,17 +472,20 @@
                                 <state key="normal" title="Incorrect Answer"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5g-he-prW">
-                                <rect key="frame" x="275" y="72" width="32" height="21"/>
+                                <rect key="frame" x="275" y="116" width="32" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuj-hC-P7E">
-                                <rect key="frame" x="146" y="147" width="82" height="30"/>
+                                <rect key="frame" x="146" y="191" width="82" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="82" id="xfm-aH-h3I"/>
                                 </constraints>
                                 <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSoundSixButton:" destination="Gmr-gA-nzZ" eventType="touchUpInside" id="Y7E-es-s10"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -507,7 +513,7 @@
         <!--Sound Four-->
         <scene sceneID="RFx-qs-sUY">
             <objects>
-                <viewController title="Sound Four" id="1bp-t7-p5e" sceneMemberID="viewController">
+                <viewController title="Sound Four" id="1bp-t7-p5e" customClass="SoundFourViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bKL-y8-4jx"/>
                         <viewControllerLayoutGuide type="bottom" id="vkW-mw-C3Z"/>
@@ -543,9 +549,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ei2-y9-ifP">
-                                <rect key="frame" x="164" y="148" width="46" height="30"/>
+                                <rect key="frame" x="146" y="148" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="PLay Sound"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -559,10 +565,10 @@
             </objects>
             <point key="canvasLocation" x="4607" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Sound Seven View Controller-->
         <scene sceneID="rHZ-T3-O0j">
             <objects>
-                <viewController id="r8p-p7-FCd" sceneMemberID="viewController">
+                <viewController id="r8p-p7-FCd" customClass="SoundSevenViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nc8-WD-dmH"/>
                         <viewControllerLayoutGuide type="bottom" id="aPM-Bi-RYo"/>
@@ -588,17 +594,20 @@
                                 <state key="normal" title="Incorrect Answer"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxk-UT-FVt">
-                                <rect key="frame" x="275" y="72" width="32" height="21"/>
+                                <rect key="frame" x="275" y="116" width="32" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNz-sT-vd2">
-                                <rect key="frame" x="147" y="156" width="80" height="30"/>
+                                <rect key="frame" x="147" y="200" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="gfC-hK-Cld"/>
                                 </constraints>
                                 <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSoundSevenButton:" destination="r8p-p7-FCd" eventType="touchUpInside" id="K13-rT-iMR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
