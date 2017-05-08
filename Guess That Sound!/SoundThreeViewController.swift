@@ -32,6 +32,5 @@ class SoundThreeViewController: UIViewController {
         }
             audioBegin.prepareToPlay()
             audioBegin.play()
-    }
-
-}
+        }
+        }

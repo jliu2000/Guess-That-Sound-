@@ -21,6 +21,7 @@ class SoundSixViewController: UIViewController {
     
     
     @IBAction func playSoundSixButton(_ sender: UIButton) {
+        
         do
         {
             try audioBegin = AVAudioPlayer(contentsOf: twang, fileTypeHint: AVFileTypeMPEGLayer3)
@@ -29,10 +30,10 @@ class SoundSixViewController: UIViewController {
         {
             print("Error")
         }
-        audioBegin.prepareToPlay()
-        audioBegin.play()
-    }
-}
+            audioBegin.prepareToPlay()
+            audioBegin.play()
+        }
+        }
 
 
 

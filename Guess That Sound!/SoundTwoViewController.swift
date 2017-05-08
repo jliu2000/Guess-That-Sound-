@@ -22,6 +22,7 @@ class SoundTwoViewController: UIViewController {
 
   
     @IBAction func playSoundTwoOnButtonTapped(_ sender: UIButton) {
+       
         do
         {
             try audioBegin = AVAudioPlayer(contentsOf: storm, fileTypeHint: AVFileTypeMPEGLayer3)
@@ -30,10 +31,7 @@ class SoundTwoViewController: UIViewController {
         {
             print("Error")
         }
-        
-        audioBegin.prepareToPlay()
-        audioBegin.play()
-        
-    }
-
-}
+            audioBegin.prepareToPlay()
+            audioBegin.play()
+        }
+        }

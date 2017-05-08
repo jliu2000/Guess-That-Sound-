@@ -29,7 +29,7 @@ class SoundFourViewController: UIViewController {
         {
             print("Error")
         }
-        audioBegin.prepareToPlay()
-        audioBegin.play()
-    }
-}
+            audioBegin.prepareToPlay()
+            audioBegin.play()
+        }
+        }

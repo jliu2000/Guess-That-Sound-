@@ -21,6 +21,7 @@ class SoundOneViewController: UIViewController {
     }
 
     @IBAction func playSoundOne(_ sender: UIButton) {
+        
         do
         {
             try audioBegin = AVAudioPlayer(contentsOf: bankrupt, fileTypeHint: AVFileTypeMPEGLayer3)
@@ -29,10 +30,9 @@ class SoundOneViewController: UIViewController {
         {
             print("Error")
         }
-        audioBegin.prepareToPlay()
-        audioBegin.play()
-        
-    }
-    }
+            audioBegin.prepareToPlay()
+            audioBegin.play()
+        }
+        }
 
 

@@ -26,6 +26,7 @@ class SoundFiveViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func playSoundFiveButton(_ sender: UIButton) {
+        
         do
         {
             try audioBegin = AVAudioPlayer(contentsOf: chance, fileTypeHint: AVFileTypeMPEGLayer3)
@@ -34,8 +35,7 @@ class SoundFiveViewController: UIViewController {
         {
             print("Error")
         }
-        audioBegin.prepareToPlay()
-        audioBegin.play()
-
-    }
-}
+            audioBegin.prepareToPlay()
+            audioBegin.play()
+        }
+        }
