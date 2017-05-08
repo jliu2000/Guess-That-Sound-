@@ -12,7 +12,7 @@ import AVFoundation
 class SoundTwoViewController: UIViewController {
     
     var audioBegin = AVAudioPlayer()
-    var storm = URL(fileURLWithPath: Bundle.main.path(forResource: "Storm", ofType: "mp3")!)
+    var storm = URL(fileURLWithPath: Bundle.main.path(forResource: "RagingStorm", ofType: "mp3")!)
 
     override func viewDidLoad() {
         super.viewDidLoad()

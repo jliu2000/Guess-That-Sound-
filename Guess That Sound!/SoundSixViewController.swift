@@ -12,7 +12,7 @@ import AVFoundation
 class SoundSixViewController: UIViewController {
     
     var audioBegin = AVAudioPlayer()
-    var twang = URL(fileURLWithPath: Bundle.main.path(forResource: "Twang", ofType: "mp3")!)
+    var twang = URL(fileURLWithPath: Bundle.main.path(forResource: "GuitarTwang", ofType: "mp3")!)
     override func viewDidLoad() {
         super.viewDidLoad()
         

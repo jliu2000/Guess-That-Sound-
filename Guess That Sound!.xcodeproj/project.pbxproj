@@ -10,6 +10,10 @@
 		3F5B88F51EBCDC300094198D /* SoundFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B88F41EBCDC300094198D /* SoundFiveViewController.swift */; };
 		3F5B88F71EBCDC4A0094198D /* SoundSixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B88F61EBCDC4A0094198D /* SoundSixViewController.swift */; };
 		3F5B88F91EBCDC640094198D /* SoundSevenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B88F81EBCDC640094198D /* SoundSevenViewController.swift */; };
+		3F935DD01EC0D6C8007C64F6 /* RagingStorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F935DCF1EC0D6C8007C64F6 /* RagingStorm.mp3 */; };
+		3F935DD21EC0D7DD007C64F6 /* NailGun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F935DD11EC0D7DD007C64F6 /* NailGun.mp3 */; };
+		3F935DD41EC0D83A007C64F6 /* GuitarTwang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F935DD31EC0D83A007C64F6 /* GuitarTwang.mp3 */; };
+		3F935DD61EC0D900007C64F6 /* TruckHorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F935DD51EC0D8FF007C64F6 /* TruckHorn.mp3 */; };
 		3F945CC01EA7C30300AD56D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F945CBF1EA7C30300AD56D5 /* AppDelegate.swift */; };
 		3F945CC21EA7C30300AD56D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F945CC11EA7C30300AD56D5 /* ViewController.swift */; };
 		3F945CC51EA7C30300AD56D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F945CC31EA7C30300AD56D5 /* Main.storyboard */; };
@@ -20,11 +24,7 @@
 		3FD38AC31EBA39BC001330B5 /* Bankrupt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38ABB1EBA39BC001330B5 /* Bankrupt.mp3 */; };
 		3FD38AC41EBA39BC001330B5 /* Chance Igh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38ABC1EBA39BC001330B5 /* Chance Igh.mp3 */; };
 		3FD38AC51EBA39BC001330B5 /* Kazoo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38ABD1EBA39BC001330B5 /* Kazoo.mp3 */; };
-		3FD38AC61EBA39BC001330B5 /* Nail Gun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38ABE1EBA39BC001330B5 /* Nail Gun.mp3 */; };
-		3FD38AC71EBA39BC001330B5 /* Storm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38ABF1EBA39BC001330B5 /* Storm.mp3 */; };
-		3FD38AC81EBA39BC001330B5 /* Truck Horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38AC01EBA39BC001330B5 /* Truck Horn.mp3 */; };
 		3FD38AC91EBA39BC001330B5 /* Turbo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38AC11EBA39BC001330B5 /* Turbo.mp3 */; };
-		3FD38ACA1EBA39BC001330B5 /* Twang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD38AC21EBA39BC001330B5 /* Twang.mp3 */; };
 		69C1FC831EBA340100CFA9E8 /* SoundOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1FC821EBA340100CFA9E8 /* SoundOneViewController.swift */; };
 		69C1FC861EBA352000CFA9E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C1FC851EBA352000CFA9E8 /* AVFoundation.framework */; };
 		69C1FC891EBB827A00CFA9E8 /* SoundTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1FC881EBB827A00CFA9E8 /* SoundTwoViewController.swift */; };
@@ -53,6 +53,10 @@
 		3F5B88F41EBCDC300094198D /* SoundFiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundFiveViewController.swift; sourceTree = "<group>"; };
 		3F5B88F61EBCDC4A0094198D /* SoundSixViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundSixViewController.swift; sourceTree = "<group>"; };
 		3F5B88F81EBCDC640094198D /* SoundSevenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundSevenViewController.swift; sourceTree = "<group>"; };
+		3F935DCF1EC0D6C8007C64F6 /* RagingStorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RagingStorm.mp3; sourceTree = "<group>"; };
+		3F935DD11EC0D7DD007C64F6 /* NailGun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = NailGun.mp3; sourceTree = "<group>"; };
+		3F935DD31EC0D83A007C64F6 /* GuitarTwang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GuitarTwang.mp3; sourceTree = "<group>"; };
+		3F935DD51EC0D8FF007C64F6 /* TruckHorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TruckHorn.mp3; sourceTree = "<group>"; };
 		3F945CBC1EA7C30300AD56D5 /* Guess That Sound!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess That Sound!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F945CBF1EA7C30300AD56D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F945CC11EA7C30300AD56D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,11 +73,7 @@
 		3FD38ABB1EBA39BC001330B5 /* Bankrupt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bankrupt.mp3; sourceTree = "<group>"; };
 		3FD38ABC1EBA39BC001330B5 /* Chance Igh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Chance Igh.mp3"; sourceTree = "<group>"; };
 		3FD38ABD1EBA39BC001330B5 /* Kazoo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kazoo.mp3; sourceTree = "<group>"; };
-		3FD38ABE1EBA39BC001330B5 /* Nail Gun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Nail Gun.mp3"; sourceTree = "<group>"; };
-		3FD38ABF1EBA39BC001330B5 /* Storm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Storm.mp3; sourceTree = "<group>"; };
-		3FD38AC01EBA39BC001330B5 /* Truck Horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Truck Horn.mp3"; sourceTree = "<group>"; };
 		3FD38AC11EBA39BC001330B5 /* Turbo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Turbo.mp3; sourceTree = "<group>"; };
-		3FD38AC21EBA39BC001330B5 /* Twang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Twang.mp3; sourceTree = "<group>"; };
 		69C1FC821EBA340100CFA9E8 /* SoundOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundOneViewController.swift; sourceTree = "<group>"; };
 		69C1FC851EBA352000CFA9E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		69C1FC881EBB827A00CFA9E8 /* SoundTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundTwoViewController.swift; sourceTree = "<group>"; };
@@ -173,11 +173,11 @@
 				3FD38ABB1EBA39BC001330B5 /* Bankrupt.mp3 */,
 				3FD38ABC1EBA39BC001330B5 /* Chance Igh.mp3 */,
 				3FD38ABD1EBA39BC001330B5 /* Kazoo.mp3 */,
-				3FD38ABE1EBA39BC001330B5 /* Nail Gun.mp3 */,
-				3FD38ABF1EBA39BC001330B5 /* Storm.mp3 */,
-				3FD38AC01EBA39BC001330B5 /* Truck Horn.mp3 */,
+				3F935DCF1EC0D6C8007C64F6 /* RagingStorm.mp3 */,
+				3F935DD11EC0D7DD007C64F6 /* NailGun.mp3 */,
+				3F935DD51EC0D8FF007C64F6 /* TruckHorn.mp3 */,
 				3FD38AC11EBA39BC001330B5 /* Turbo.mp3 */,
-				3FD38AC21EBA39BC001330B5 /* Twang.mp3 */,
+				3F935DD31EC0D83A007C64F6 /* GuitarTwang.mp3 */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -297,17 +297,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD38AC81EBA39BC001330B5 /* Truck Horn.mp3 in Resources */,
 				3FD38AC91EBA39BC001330B5 /* Turbo.mp3 in Resources */,
+				3F935DD41EC0D83A007C64F6 /* GuitarTwang.mp3 in Resources */,
 				3FD38AC51EBA39BC001330B5 /* Kazoo.mp3 in Resources */,
+				3F935DD21EC0D7DD007C64F6 /* NailGun.mp3 in Resources */,
 				3F945CCA1EA7C30300AD56D5 /* LaunchScreen.storyboard in Resources */,
 				3FD38AC41EBA39BC001330B5 /* Chance Igh.mp3 in Resources */,
-				3FD38AC61EBA39BC001330B5 /* Nail Gun.mp3 in Resources */,
-				3FD38ACA1EBA39BC001330B5 /* Twang.mp3 in Resources */,
-				3FD38AC71EBA39BC001330B5 /* Storm.mp3 in Resources */,
+				3F935DD01EC0D6C8007C64F6 /* RagingStorm.mp3 in Resources */,
 				3FD38AC31EBA39BC001330B5 /* Bankrupt.mp3 in Resources */,
 				3F945CC71EA7C30300AD56D5 /* Assets.xcassets in Resources */,
 				3F945CC51EA7C30300AD56D5 /* Main.storyboard in Resources */,
+				3F935DD61EC0D900007C64F6 /* TruckHorn.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import AVFoundation
 class SoundFourViewController: UIViewController {
     
     var audioBegin = AVAudioPlayer()
-    var nailGun = URL(fileURLWithPath: Bundle.main.path(forResource: "Nail Gun", ofType: "mp3")!)
+    var nailGun = URL(fileURLWithPath: Bundle.main.path(forResource: "NailGun", ofType: "mp3")!)
     
     override func viewDidLoad() {
         super.viewDidLoad()
