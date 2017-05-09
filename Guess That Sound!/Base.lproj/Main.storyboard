@@ -25,32 +25,31 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCr-fa-KBG">
                                 <rect key="frame" x="132" y="294" width="110" height="79"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="x6F-yn-Iu9"/>
+                                    <constraint firstAttribute="width" constant="110" id="ZIl-ma-j5H"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="Begin"/>
+                                <state key="normal" title="Begin">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="G79-Ko-TiQ" kind="show" id="62r-pV-Ckv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess That Sound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8i-F3-7UR">
-                                <rect key="frame" x="67" y="72" width="241" height="70"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logomakr_9Dxe5s" translatesAutoresizingMaskIntoConstraints="NO" id="1GT-od-Dn7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="112"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="JbT-gy-OGP"/>
+                                    <constraint firstAttribute="height" constant="112" id="rsM-kq-fPO"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VCr-fa-KBG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1gB-fd-mZk"/>
-                            <constraint firstItem="o8i-F3-7UR" firstAttribute="centerX" secondItem="VCr-fa-KBG" secondAttribute="centerX" id="IO9-w1-w0P"/>
-                            <constraint firstItem="VCr-fa-KBG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RyV-Kh-1rW"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VCr-fa-KBG" secondAttribute="bottom" constant="294" id="ebB-X3-uGh"/>
-                            <constraint firstItem="o8i-F3-7UR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="efK-Rd-nh7"/>
-                            <constraint firstItem="o8i-F3-7UR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="jKg-YL-sUt"/>
+                            <constraint firstItem="1GT-od-Dn7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="18W-FL-dWd"/>
+                            <constraint firstItem="VCr-fa-KBG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Isl-Fj-tXu"/>
+                            <constraint firstItem="1GT-od-Dn7" firstAttribute="centerX" secondItem="VCr-fa-KBG" secondAttribute="centerX" id="OF7-IQ-URE"/>
+                            <constraint firstAttribute="trailing" secondItem="1GT-od-Dn7" secondAttribute="trailing" id="h7y-x9-LeE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VCr-fa-KBG" secondAttribute="bottom" constant="294" id="jQ9-v1-VRv"/>
+                            <constraint firstItem="1GT-od-Dn7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="td2-kq-tXx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XXI-lP-8DF"/>
@@ -657,6 +656,9 @@
             <point key="canvasLocation" x="7168.8000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logomakr_9Dxe5s" width="447" height="128"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="I1l-A9-dAe"/>
     </inferredMetricsTieBreakers>
