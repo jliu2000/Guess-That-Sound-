@@ -17,17 +17,22 @@ class SoundOneViewController: UIViewController {
     var  timeLeft = 5
     var counter = 6
     
+    @IBOutlet weak var backToStart: UIButton!
+    
+    @IBOutlet weak var incorrectAnswer1: UIButton!
+    @IBOutlet weak var incorrectAnswer2: UIButton!
+    @IBOutlet weak var incorrectAnswer3: UIButton!
     @IBOutlet weak var correctAnswer: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        backToStart.isHidden = true
+        
     }
     
-   
     
-
+    
+    
     @IBAction func playSoundOne(_ sender: UIButton) {
         
         do
@@ -38,21 +43,24 @@ class SoundOneViewController: UIViewController {
         {
             print("Error")
         }
-            audioBegin.prepareToPlay()
-            audioBegin.play()
+        audioBegin.prepareToPlay()
+        audioBegin.play()
         timeLeft = 5
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(SoundOneViewController.timerRunning), userInfo: nil, repeats: true)
-        }
-
-func timerRunning (){
-    timeLeft -= 1
-    timerLabel.text = "Time Left: \(timeLeft)"
-    
-    if timeLeft == 0{
-        timer.invalidate()
-        timerLabel.text = "Time's up"
-        correctAnswer.isHidden = true
-        
     }
-}
+    
+    func timerRunning (){
+        timeLeft -= 1
+        timerLabel.text = "Time Left: \(timeLeft)"
+        
+        if timeLeft == 0{
+            timer.invalidate()
+            timerLabel.text = "Time's up"
+            correctAnswer.isHidden = true
+            incorrectAnswer1.isHidden = true
+            incorrectAnswer2.isHidden = true
+            incorrectAnswer3.isHidden = true
+            backToStart.isHidden = false
+        }
+    }
 }

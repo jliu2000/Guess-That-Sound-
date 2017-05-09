@@ -109,27 +109,35 @@
                                     <action selector="playSoundOne:" destination="G79-Ko-TiQ" eventType="touchUpInside" id="4zJ-q2-pEJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Left: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nub-pb-en3">
+                                <rect key="frame" x="16" y="633" width="81.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhv-w5-Vq7">
                                 <rect key="frame" x="327" y="72" width="32" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nub-pb-en3">
-                                <rect key="frame" x="165" y="626" width="110" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXY-X2-0B8">
+                                <rect key="frame" x="261" y="627.5" width="103" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Back To Start"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Oyi-jM-rXr" firstAttribute="top" secondItem="Nhv-w5-Vq7" secondAttribute="top" constant="-9" id="4oG-ia-DFy"/>
                             <constraint firstItem="Oyi-jM-rXr" firstAttribute="centerX" secondItem="m0b-SY-hNh" secondAttribute="centerX" id="54l-z7-p3D"/>
+                            <constraint firstItem="pXY-X2-0B8" firstAttribute="centerX" secondItem="qh9-0A-kVh" secondAttribute="centerX" constant="125" id="5wu-Ti-O17"/>
+                            <constraint firstItem="nub-pb-en3" firstAttribute="centerX" secondItem="qh9-0A-kVh" secondAttribute="centerX" constant="-130.75" id="BTO-eZ-4By"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0Fh-W6-EkM" secondAttribute="trailing" constant="84" id="ChA-03-kQN"/>
                             <constraint firstItem="m0b-SY-hNh" firstAttribute="top" secondItem="0Fh-W6-EkM" secondAttribute="bottom" constant="8" symbolic="YES" id="GJ5-6h-fLy"/>
                             <constraint firstItem="0Fh-W6-EkM" firstAttribute="centerY" secondItem="qh9-0A-kVh" secondAttribute="centerY" id="YNp-nn-gUg"/>
+                            <constraint firstItem="pXY-X2-0B8" firstAttribute="centerY" secondItem="qh9-0A-kVh" secondAttribute="centerY" constant="310.5" id="ciy-Y0-iDx"/>
+                            <constraint firstItem="nub-pb-en3" firstAttribute="centerY" secondItem="qh9-0A-kVh" secondAttribute="centerY" constant="310" id="cnV-fZ-kY9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Nhv-w5-Vq7" secondAttribute="trailing" id="hcA-rG-XgJ"/>
                             <constraint firstItem="Oyi-jM-rXr" firstAttribute="top" secondItem="idA-OS-PWT" secondAttribute="bottom" constant="8" symbolic="YES" id="kOc-E0-OZn"/>
                             <constraint firstItem="0Fh-W6-EkM" firstAttribute="leading" secondItem="qh9-0A-kVh" secondAttribute="leadingMargin" constant="87" id="l3f-J0-gfP"/>
@@ -137,11 +145,15 @@
                             <constraint firstItem="r9Y-px-oFT" firstAttribute="leading" secondItem="RG7-dw-sfK" secondAttribute="leading" id="ssY-t9-tLg"/>
                             <constraint firstItem="m0b-SY-hNh" firstAttribute="leading" secondItem="r9Y-px-oFT" secondAttribute="leading" id="uth-g7-n0z"/>
                             <constraint firstItem="r9Y-px-oFT" firstAttribute="top" secondItem="m0b-SY-hNh" secondAttribute="bottom" constant="8" symbolic="YES" id="vi8-7B-bEb"/>
-                            <constraint firstItem="RG7-dw-sfK" firstAttribute="top" secondItem="r9Y-px-oFT" secondAttribute="bottom" constant="8" symbolic="YES" id="xzo-L1-Hcw"/>
+                            <constraint firstItem="RG7-dw-sfK" firstAttribute="top" secondItem="r9Y-px-oFT" secondAttribute="bottom" constant="8" id="xzo-L1-Hcw"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backToStart" destination="pXY-X2-0B8" id="8Jb-Np-Woc"/>
                         <outlet property="correctAnswer" destination="0Fh-W6-EkM" id="ecY-1c-Qti"/>
+                        <outlet property="incorrectAnswer1" destination="m0b-SY-hNh" id="QOE-SG-C4l"/>
+                        <outlet property="incorrectAnswer2" destination="r9Y-px-oFT" id="jnP-dd-M2z"/>
+                        <outlet property="incorrectAnswer3" destination="RG7-dw-sfK" id="dzR-97-0PQ"/>
                         <outlet property="timerLabel" destination="nub-pb-en3" id="G7S-hh-2Cj"/>
                     </connections>
                 </viewController>
