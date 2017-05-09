@@ -14,7 +14,7 @@ class SoundOneViewController: UIViewController {
     var audioBegin = AVAudioPlayer()
     var bankrupt = URL(fileURLWithPath: Bundle.main.path(forResource: "Bankrupt", ofType: "mp3")!)
     var timer = Timer()
-    var  timeLeft = 5
+    var  timeLeft = 6
     var counter = 6
     
     @IBOutlet weak var backToStart: UIButton!
@@ -45,7 +45,7 @@ class SoundOneViewController: UIViewController {
         }
         audioBegin.prepareToPlay()
         audioBegin.play()
-        timeLeft = 5
+        timeLeft = 6
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(SoundOneViewController.timerRunning), userInfo: nil, repeats: true)
     }
     
