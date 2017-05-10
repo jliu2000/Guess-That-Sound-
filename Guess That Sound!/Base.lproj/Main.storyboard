@@ -248,8 +248,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKV-FS-YOl">
-                                <rect key="frame" x="131" y="432" width="117" height="30"/>
-                                <state key="normal" title="Incorrect Answer"/>
+                                <rect key="frame" x="168" y="432" width="43" height="30"/>
+                                <state key="normal" title="Whale"/>
                                 <connections>
                                     <segue destination="vxY-Xg-PWO" kind="show" id="lTe-ag-DpR"/>
                                 </connections>
@@ -724,6 +724,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ocs-4N-aSv"/>
-        <segue reference="JwT-wS-CgT"/>
+        <segue reference="wmX-qL-tuT"/>
     </inferredMetricsTieBreakers>
 </document>
