@@ -173,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vqE-ci-Yki" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855.2" y="134.48275862068968"/>
+            <point key="canvasLocation" x="1905" y="134"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fMK-ZU-POx">
@@ -445,7 +445,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHd-kS-Yfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4607" y="134"/>
+            <point key="canvasLocation" x="4586" y="134"/>
         </scene>
         <!--Sound Five View Controller-->
         <scene sceneID="YLV-U2-wim">
@@ -583,68 +583,6 @@
             </objects>
             <point key="canvasLocation" x="6340" y="133.5832083958021"/>
         </scene>
-        <!--Sound Four-->
-        <scene sceneID="RFx-qs-sUY">
-            <objects>
-                <viewController title="Sound Four" id="1bp-t7-p5e" customClass="SoundFourViewController" customModule="Guess_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bKL-y8-4jx"/>
-                        <viewControllerLayoutGuide type="bottom" id="vkW-mw-C3Z"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HQA-PB-Y3n">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hx-jU-Jan">
-                                <rect key="frame" x="103" y="318" width="172" height="30"/>
-                                <state key="normal" title="Chance"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bA-9z-PZy">
-                                <rect key="frame" x="129" y="356" width="117" height="30"/>
-                                <state key="normal" title="Incorrect Answer"/>
-                                <connections>
-                                    <segue destination="vxY-Xg-PWO" kind="show" id="mNe-YS-wvX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rM0-iB-tim">
-                                <rect key="frame" x="129" y="394" width="117" height="30"/>
-                                <state key="normal" title="Incorrect Answer"/>
-                                <connections>
-                                    <segue destination="vxY-Xg-PWO" kind="show" id="cBP-Fl-UmP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf5-57-7zg">
-                                <rect key="frame" x="131" y="432" width="117" height="30"/>
-                                <state key="normal" title="Incorrect Answer"/>
-                                <connections>
-                                    <segue destination="vxY-Xg-PWO" kind="show" id="I9T-mY-GB7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ei2-y9-ifP">
-                                <rect key="frame" x="149" y="20" width="77" height="30"/>
-                                <state key="normal" title="Play Sound"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="6hx-jU-Jan" firstAttribute="leading" secondItem="HQA-PB-Y3n" secondAttribute="leadingMargin" constant="87" id="7kz-RK-nLh"/>
-                            <constraint firstItem="ei2-y9-ifP" firstAttribute="top" secondItem="bKL-y8-4jx" secondAttribute="bottom" id="CtQ-RE-mQn"/>
-                            <constraint firstItem="5bA-9z-PZy" firstAttribute="leading" secondItem="rM0-iB-tim" secondAttribute="leading" id="HNh-td-F7o"/>
-                            <constraint firstItem="6hx-jU-Jan" firstAttribute="centerX" secondItem="Tf5-57-7zg" secondAttribute="centerX" id="J4P-5a-fxy"/>
-                            <constraint firstItem="ei2-y9-ifP" firstAttribute="centerX" secondItem="5bA-9z-PZy" secondAttribute="centerX" id="NMW-Aq-v1D"/>
-                            <constraint firstItem="ei2-y9-ifP" firstAttribute="centerX" secondItem="HQA-PB-Y3n" secondAttribute="centerX" id="Tr6-Hu-qWw"/>
-                            <constraint firstItem="rM0-iB-tim" firstAttribute="top" secondItem="5bA-9z-PZy" secondAttribute="bottom" constant="8" symbolic="YES" id="X5Z-Oh-5Ix"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6hx-jU-Jan" secondAttribute="trailing" constant="84" id="Yca-dv-2KW"/>
-                            <constraint firstItem="Tf5-57-7zg" firstAttribute="top" secondItem="rM0-iB-tim" secondAttribute="bottom" constant="8" symbolic="YES" id="ZJj-6h-AKH"/>
-                            <constraint firstItem="5bA-9z-PZy" firstAttribute="top" secondItem="6hx-jU-Jan" secondAttribute="bottom" constant="8" symbolic="YES" id="bes-VO-gYZ"/>
-                            <constraint firstItem="6hx-jU-Jan" firstAttribute="centerY" secondItem="HQA-PB-Y3n" secondAttribute="centerY" id="ynR-mR-NQu"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WWb-g4-pZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4607" y="134"/>
-        </scene>
         <!--Sound Seven View Controller-->
         <scene sceneID="rHZ-T3-O0j">
             <objects>
@@ -710,6 +648,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ChB-Ap-Nan"/>
-        <segue reference="wmX-qL-tuT"/>
+        <segue reference="znw-fN-eOb"/>
     </inferredMetricsTieBreakers>
 </document>
