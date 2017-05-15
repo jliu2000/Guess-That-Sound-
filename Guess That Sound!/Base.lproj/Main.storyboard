@@ -647,6 +647,18 @@
                                     <action selector="playSoundSixButton:" destination="Gmr-gA-nzZ" eventType="touchUpInside" id="Y7E-es-s10"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Left: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpY-Kl-vVp">
+                                <rect key="frame" x="16" y="638" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUz-ak-9Ri">
+                                <rect key="frame" x="271" y="634" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back To Start"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -663,6 +675,14 @@
                             <constraint firstItem="tuj-hC-P7E" firstAttribute="centerX" secondItem="cTw-UP-2xZ" secondAttribute="centerX" id="tZ8-PH-xOs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backToStart" destination="IUz-ak-9Ri" id="ULB-Df-zdG"/>
+                        <outlet property="correctAnswer" destination="1Ck-4J-29L" id="j4l-bh-eYR"/>
+                        <outlet property="incorrectAnswer1" destination="cTw-UP-2xZ" id="dYa-Zn-qdQ"/>
+                        <outlet property="incorrectAnswer2" destination="iqe-kq-FBH" id="ulo-Gn-T0a"/>
+                        <outlet property="incorrectAnswer3" destination="orX-9b-rq1" id="XeG-Tv-mvf"/>
+                        <outlet property="timerLabel" destination="gpY-Kl-vVp" id="ine-gX-Emt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cf-t3-noR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -733,6 +753,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ocs-4N-aSv"/>
-        <segue reference="znw-fN-eOb"/>
+        <segue reference="pcY-f4-0f3"/>
     </inferredMetricsTieBreakers>
 </document>
