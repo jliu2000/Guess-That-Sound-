@@ -10,32 +10,59 @@ import UIKit
 import AVFoundation
 
 class SoundFiveViewController: UIViewController {
-
+    
     
     var audioBegin = AVAudioPlayer()
-    var chance = URL(fileURLWithPath: Bundle.main.path(forResource: "Chance Igh", ofType: "mp3")!)
+    var twang = URL(fileURLWithPath: Bundle.main.path(forResource: "GuitarTwang", ofType: "mp3")!)
+    var timer = Timer()
+    var  timeLeft = 7
+    var counter = 6
 
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var backToStart: UIButton!
+    @IBOutlet weak var correctAnswer: UIButton!
+    @IBOutlet weak var incorrectAnswer: UIButton!
+    @IBOutlet weak var incorrectAnswer2: UIButton!
+    @IBOutlet weak var incorrectAnswer3: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        backToStart.isHidden = true
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func playSoundFiveButton(_ sender: UIButton) {
         
         do
         {
-            try audioBegin = AVAudioPlayer(contentsOf: chance, fileTypeHint: AVFileTypeMPEGLayer3)
+            try audioBegin = AVAudioPlayer(contentsOf: twang, fileTypeHint: AVFileTypeMPEGLayer3)
         }
         catch
         {
             print("Error")
         }
-            audioBegin.prepareToPlay()
-            audioBegin.play()
+        audioBegin.prepareToPlay()
+        audioBegin.play()
+        
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(SoundFiveViewController.timerRunning), userInfo: nil, repeats: true)
+    }
+    
+    func timerRunning (){
+        timeLeft -= 1
+        timerLabel.text = "Time Left: \(timeLeft)"
+        
+        if timeLeft == 0{
+            timer.invalidate()
+            timerLabel.text = "Time's up"
+            correctAnswer.isHidden = true
+            incorrectAnswer.isHidden = true
+            incorrectAnswer2.isHidden = true
+            incorrectAnswer3.isHidden = true
+            backToStart.isHidden = false
         }
-        }
+    }
+
+}

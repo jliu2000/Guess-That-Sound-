@@ -15,6 +15,7 @@ class SoundFourViewController: UIViewController {
     var timer = Timer()
     var  timeLeft = 6
     var counter = 6
+    
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var correctAnswer: UIButton!
     @IBOutlet weak var incorrectAnswer1: UIButton!
