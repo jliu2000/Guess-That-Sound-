@@ -10,23 +10,31 @@ import UIKit
 import AVFoundation
 class SoundSevenViewController: UIViewController {
     var audioBegin = AVAudioPlayer()
-    var truck = URL(fileURLWithPath: Bundle.main.path(forResource: "TruckHorn", ofType: "mp3")!)
+    var kazoo = URL(fileURLWithPath: Bundle.main.path(forResource: "Kazoo", ofType: "mp3")!)
+    var timer = Timer()
+    var  timeLeft = 6
+    var counter = 6
+
+    @IBOutlet weak var correctAnswer: UIButton!
+    @IBOutlet weak var incorrectAnswer: UIButton!
+    @IBOutlet weak var incorrectAnswer2: UIButton!
+    @IBOutlet weak var incorrectAnswer3: UIButton!
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var backToStart: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        backToStart.isHidden = true
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     @IBAction func playSoundSevenButton(_ sender: Any) {
         
         do
         {
-            try audioBegin = AVAudioPlayer(contentsOf: truck, fileTypeHint: AVFileTypeMPEGLayer3)
+            try audioBegin = AVAudioPlayer(contentsOf: kazoo, fileTypeHint: AVFileTypeMPEGLayer3)
         }
         catch
         {
@@ -34,7 +42,25 @@ class SoundSevenViewController: UIViewController {
         }
             audioBegin.prepareToPlay()
             audioBegin.play()
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(SoundSixViewController.timerRunning), userInfo: nil, repeats: true)
+
         }
+    
+    func timerRunning (){
+        timeLeft -= 1
+        timerLabel.text = "Time Left: \(timeLeft)"
+        
+        if timeLeft == 0{
+            timer.invalidate()
+            timerLabel.text = "Time's up"
+            correctAnswer.isHidden = true
+            incorrectAnswer.isHidden = true
+            incorrectAnswer2.isHidden = true
+            incorrectAnswer3.isHidden = true
+            backToStart.isHidden = false
+        }
+    }
+
     
 }
 
