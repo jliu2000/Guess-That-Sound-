@@ -262,13 +262,6 @@
                                     <segue destination="vxY-Xg-PWO" kind="show" id="lTe-ag-DpR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZc-KP-G7l">
-                                <rect key="frame" x="149" y="20" width="77" height="30"/>
-                                <state key="normal" title="Play Sound"/>
-                                <connections>
-                                    <action selector="playSoundTwoOnButtonTapped:" destination="haZ-Gj-emY" eventType="touchUpInside" id="AhN-L8-6lK"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLJ-de-m0A">
                                 <rect key="frame" x="113" y="394" width="152" height="30"/>
                                 <state key="normal" title="Person Making Noises"/>
@@ -276,18 +269,25 @@
                                     <segue destination="vxY-Xg-PWO" kind="show" id="fg5-No-dnd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZc-KP-G7l">
+                                <rect key="frame" x="151" y="20" width="77" height="30"/>
+                                <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSoundTwoOnButtonTapped:" destination="haZ-Gj-emY" eventType="touchUpInside" id="AhN-L8-6lK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tLJ-de-m0A" firstAttribute="centerX" secondItem="hKV-FS-YOl" secondAttribute="centerX" id="2V5-3g-Am5"/>
                             <constraint firstItem="qf4-qd-eBv" firstAttribute="centerX" secondItem="UkM-LL-iTQ" secondAttribute="centerX" id="4K3-6r-cSZ"/>
-                            <constraint firstItem="hZc-KP-G7l" firstAttribute="centerX" secondItem="Bzn-Um-22Z" secondAttribute="centerX" id="ATE-NN-BU4"/>
+                            <constraint firstItem="hZc-KP-G7l" firstAttribute="centerX" secondItem="Bzn-Um-22Z" secondAttribute="centerX" constant="2" id="ATE-NN-BU4"/>
                             <constraint firstItem="qf4-qd-eBv" firstAttribute="centerY" secondItem="Bzn-Um-22Z" secondAttribute="centerY" id="LgL-5T-Kwr"/>
                             <constraint firstItem="hKV-FS-YOl" firstAttribute="top" secondItem="tLJ-de-m0A" secondAttribute="bottom" constant="8" symbolic="YES" id="N4I-Xz-gya"/>
                             <constraint firstItem="hZc-KP-G7l" firstAttribute="top" secondItem="cTc-64-VAN" secondAttribute="bottom" id="VYc-Qs-fZE"/>
                             <constraint firstItem="tLJ-de-m0A" firstAttribute="top" secondItem="UkM-LL-iTQ" secondAttribute="bottom" constant="8" symbolic="YES" id="ViY-zY-vki"/>
                             <constraint firstItem="tLJ-de-m0A" firstAttribute="leading" secondItem="Bzn-Um-22Z" secondAttribute="leadingMargin" constant="97" id="fLr-VP-Uaf"/>
-                            <constraint firstItem="hZc-KP-G7l" firstAttribute="centerX" secondItem="qf4-qd-eBv" secondAttribute="centerX" id="jZ2-9w-4PB"/>
+                            <constraint firstItem="hZc-KP-G7l" firstAttribute="centerX" secondItem="qf4-qd-eBv" secondAttribute="centerX" constant="2" id="jZ2-9w-4PB"/>
                             <constraint firstItem="UkM-LL-iTQ" firstAttribute="top" secondItem="qf4-qd-eBv" secondAttribute="bottom" constant="8" symbolic="YES" id="y6S-ON-Vr2"/>
                         </constraints>
                     </view>
@@ -398,28 +398,20 @@
                                 <state key="normal" title="Incorrect Answer"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4l-HW-zcF">
-                                <rect key="frame" x="149" y="28" width="77" height="30"/>
+                                <rect key="frame" x="149" y="21" width="77" height="30"/>
                                 <state key="normal" title="Play Sound"/>
                                 <connections>
                                     <action selector="playSoundFourOnButtonTapped:" destination="qdn-j8-0lf" eventType="touchUpInside" id="8BY-sZ-2Ri"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKi-Eg-ZzU">
-                                <rect key="frame" x="327" y="37" width="32" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bPS-gc-Q4d" firstAttribute="leading" secondItem="phV-3T-8hs" secondAttribute="leadingMargin" constant="87" id="05A-R7-JrN"/>
-                            <constraint firstItem="X4l-HW-zcF" firstAttribute="top" secondItem="wqk-wa-81h" secondAttribute="bottom" constant="8" symbolic="YES" id="1iC-S4-BFj"/>
+                            <constraint firstItem="X4l-HW-zcF" firstAttribute="top" secondItem="wqk-wa-81h" secondAttribute="bottom" constant="1" id="1iC-S4-BFj"/>
                             <constraint firstItem="twS-eV-QY2" firstAttribute="top" secondItem="Fta-4i-RDB" secondAttribute="bottom" constant="8" symbolic="YES" id="3qD-UP-Bt3"/>
-                            <constraint firstItem="eKi-Eg-ZzU" firstAttribute="trailing" secondItem="phV-3T-8hs" secondAttribute="trailingMargin" id="9Yw-Nu-M65"/>
                             <constraint firstItem="Fta-4i-RDB" firstAttribute="top" secondItem="bPS-gc-Q4d" secondAttribute="bottom" constant="8" symbolic="YES" id="9uD-XD-wsy"/>
                             <constraint firstItem="bPS-gc-Q4d" firstAttribute="centerX" secondItem="zlT-yd-RVP" secondAttribute="centerX" id="Qhw-6V-DBf"/>
-                            <constraint firstItem="X4l-HW-zcF" firstAttribute="bottom" secondItem="eKi-Eg-ZzU" secondAttribute="bottom" id="X4P-kO-Tdb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bPS-gc-Q4d" secondAttribute="trailing" constant="84" id="Z5I-t9-vVE"/>
                             <constraint firstItem="X4l-HW-zcF" firstAttribute="centerX" secondItem="phV-3T-8hs" secondAttribute="centerX" id="gw3-de-1kO"/>
                             <constraint firstItem="X4l-HW-zcF" firstAttribute="centerX" secondItem="Fta-4i-RDB" secondAttribute="centerX" id="hy1-hA-a6H"/>
@@ -431,7 +423,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHd-kS-Yfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4601" y="134"/>
+            <point key="canvasLocation" x="4591" y="134"/>
         </scene>
         <!--Sound Five View Controller-->
         <scene sceneID="YLV-U2-wim">
@@ -474,7 +466,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pL-Y0-Jjd">
-                                <rect key="frame" x="149" y="20" width="77" height="30"/>
+                                <rect key="frame" x="151" y="22" width="77" height="30"/>
                                 <state key="normal" title="Play Sound"/>
                                 <connections>
                                     <action selector="playSoundFiveButton:" destination="MjO-B2-USp" eventType="touchUpInside" id="3ik-ej-W0o"/>
@@ -489,11 +481,11 @@
                             <constraint firstItem="6Gp-Ar-pgr" firstAttribute="top" secondItem="mf1-WO-FRF" secondAttribute="bottom" constant="8" symbolic="YES" id="EZY-ev-HIy"/>
                             <constraint firstItem="hXz-Wz-Mgm" firstAttribute="top" secondItem="1o5-Qj-cPx" secondAttribute="bottom" constant="8" symbolic="YES" id="Hao-RI-k87"/>
                             <constraint firstItem="1o5-Qj-cPx" firstAttribute="centerY" secondItem="SxM-by-1tT" secondAttribute="centerY" id="KbZ-Ab-L8O"/>
-                            <constraint firstItem="8pL-Y0-Jjd" firstAttribute="centerX" secondItem="SxM-by-1tT" secondAttribute="centerX" id="RnA-kx-AEb"/>
+                            <constraint firstItem="8pL-Y0-Jjd" firstAttribute="centerX" secondItem="SxM-by-1tT" secondAttribute="centerX" constant="2" id="RnA-kx-AEb"/>
                             <constraint firstItem="hXz-Wz-Mgm" firstAttribute="leading" secondItem="mf1-WO-FRF" secondAttribute="leading" id="ey8-LE-mzn"/>
-                            <constraint firstItem="8pL-Y0-Jjd" firstAttribute="centerX" secondItem="hXz-Wz-Mgm" secondAttribute="centerX" id="gX0-9J-iGF"/>
+                            <constraint firstItem="8pL-Y0-Jjd" firstAttribute="centerX" secondItem="hXz-Wz-Mgm" secondAttribute="centerX" constant="2" id="gX0-9J-iGF"/>
                             <constraint firstItem="1o5-Qj-cPx" firstAttribute="centerX" secondItem="6Gp-Ar-pgr" secondAttribute="centerX" id="hQd-R5-7Wr"/>
-                            <constraint firstItem="8pL-Y0-Jjd" firstAttribute="top" secondItem="kSD-Fq-EYo" secondAttribute="bottom" id="wNP-ed-PUh"/>
+                            <constraint firstItem="8pL-Y0-Jjd" firstAttribute="top" secondItem="kSD-Fq-EYo" secondAttribute="bottom" constant="2" id="wNP-ed-PUh"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -542,7 +534,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuj-hC-P7E">
-                                <rect key="frame" x="149" y="20" width="77" height="30"/>
+                                <rect key="frame" x="149" y="23" width="77" height="30"/>
                                 <state key="normal" title="Play Sound"/>
                                 <connections>
                                     <action selector="playSoundSixButton:" destination="Gmr-gA-nzZ" eventType="touchUpInside" id="Y7E-es-s10"/>
@@ -557,7 +549,7 @@
                             <constraint firstItem="orX-9b-rq1" firstAttribute="top" secondItem="iqe-kq-FBH" secondAttribute="bottom" constant="8" symbolic="YES" id="YCH-nv-5La"/>
                             <constraint firstItem="cTw-UP-2xZ" firstAttribute="top" secondItem="1Ck-4J-29L" secondAttribute="bottom" constant="8" symbolic="YES" id="a1Y-gI-0Bl"/>
                             <constraint firstItem="1Ck-4J-29L" firstAttribute="centerX" secondItem="orX-9b-rq1" secondAttribute="centerX" id="a8O-uO-0Rc"/>
-                            <constraint firstItem="tuj-hC-P7E" firstAttribute="top" secondItem="DdX-YM-EHb" secondAttribute="bottom" id="bMc-oN-1le"/>
+                            <constraint firstItem="tuj-hC-P7E" firstAttribute="top" secondItem="DdX-YM-EHb" secondAttribute="bottom" constant="3" id="bMc-oN-1le"/>
                             <constraint firstItem="1Ck-4J-29L" firstAttribute="leading" secondItem="Lgi-dj-aTO" secondAttribute="leadingMargin" constant="87" id="cfr-JR-5K1"/>
                             <constraint firstItem="iqe-kq-FBH" firstAttribute="top" secondItem="cTw-UP-2xZ" secondAttribute="bottom" constant="8" symbolic="YES" id="kJd-M7-OX9"/>
                             <constraint firstItem="cTw-UP-2xZ" firstAttribute="leading" secondItem="iqe-kq-FBH" secondAttribute="leading" id="sJ2-Gk-MSQ"/>
@@ -598,7 +590,7 @@
                                 <state key="normal" title="Incorrect Answer"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNz-sT-vd2">
-                                <rect key="frame" x="147" y="20" width="80" height="30"/>
+                                <rect key="frame" x="149" y="22" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="pqn-x1-lxh"/>
                                 </constraints>
@@ -614,12 +606,12 @@
                             <constraint firstItem="br6-3p-vwc" firstAttribute="top" secondItem="8Hp-dv-Gvb" secondAttribute="bottom" constant="8" symbolic="YES" id="4au-fB-hi9"/>
                             <constraint firstItem="asO-aD-tZ5" firstAttribute="centerX" secondItem="br6-3p-vwc" secondAttribute="centerX" id="7on-Gp-uwf"/>
                             <constraint firstItem="asO-aD-tZ5" firstAttribute="centerY" secondItem="Qc0-nL-LNx" secondAttribute="centerY" id="8Lc-o8-J2Y"/>
-                            <constraint firstItem="nNz-sT-vd2" firstAttribute="centerX" secondItem="KkO-Ac-t4a" secondAttribute="centerX" id="GCC-3h-Cbq"/>
+                            <constraint firstItem="nNz-sT-vd2" firstAttribute="centerX" secondItem="KkO-Ac-t4a" secondAttribute="centerX" constant="1.5" id="GCC-3h-Cbq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="asO-aD-tZ5" secondAttribute="trailing" constant="84" id="IJN-N9-HXr"/>
-                            <constraint firstItem="nNz-sT-vd2" firstAttribute="centerX" secondItem="Qc0-nL-LNx" secondAttribute="centerX" id="MVF-Hw-LV8"/>
+                            <constraint firstItem="nNz-sT-vd2" firstAttribute="centerX" secondItem="Qc0-nL-LNx" secondAttribute="centerX" constant="1.5" id="MVF-Hw-LV8"/>
                             <constraint firstItem="KkO-Ac-t4a" firstAttribute="leading" secondItem="8Hp-dv-Gvb" secondAttribute="leading" id="OKo-RV-LST"/>
                             <constraint firstItem="asO-aD-tZ5" firstAttribute="leading" secondItem="Qc0-nL-LNx" secondAttribute="leadingMargin" constant="87" id="c4y-Vw-hNK"/>
-                            <constraint firstItem="nNz-sT-vd2" firstAttribute="top" secondItem="nc8-WD-dmH" secondAttribute="bottom" id="jwn-zw-i2M"/>
+                            <constraint firstItem="nNz-sT-vd2" firstAttribute="top" secondItem="nc8-WD-dmH" secondAttribute="bottom" constant="2" id="jwn-zw-i2M"/>
                             <constraint firstItem="8Hp-dv-Gvb" firstAttribute="top" secondItem="KkO-Ac-t4a" secondAttribute="bottom" constant="8" symbolic="YES" id="wlh-th-pGV"/>
                         </constraints>
                     </view>
@@ -633,7 +625,7 @@
         <image name="Logomakr_9Dxe5s" width="447" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="d7m-LP-nHK"/>
         <segue reference="ChB-Ap-Nan"/>
-        <segue reference="wmX-qL-tuT"/>
     </inferredMetricsTieBreakers>
 </document>
