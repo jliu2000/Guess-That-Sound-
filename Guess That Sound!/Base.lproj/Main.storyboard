@@ -276,6 +276,18 @@
                                     <action selector="playSoundTwoOnButtonTapped:" destination="haZ-Gj-emY" eventType="touchUpInside" id="AhN-L8-6lK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IF-2A-i4l">
+                                <rect key="frame" x="275" y="637" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back To Start"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orf-Fp-hkd">
+                                <rect key="frame" x="0.0" y="646" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -291,10 +303,18 @@
                             <constraint firstItem="UkM-LL-iTQ" firstAttribute="top" secondItem="qf4-qd-eBv" secondAttribute="bottom" constant="8" symbolic="YES" id="y6S-ON-Vr2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backToStart" destination="9IF-2A-i4l" id="2LS-J7-puc"/>
+                        <outlet property="correctAnswer" destination="qf4-qd-eBv" id="XkH-yI-x3c"/>
+                        <outlet property="incorrectAnswer1" destination="UkM-LL-iTQ" id="erB-xO-UWO"/>
+                        <outlet property="incorrectAnswer2" destination="tLJ-de-m0A" id="Euw-v3-c7w"/>
+                        <outlet property="incorrectAnswer3" destination="hKV-FS-YOl" id="t45-kl-WMw"/>
+                        <outlet property="timerLabel" destination="Orf-Fp-hkd" id="8gO-1F-taT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVu-dN-sVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2810" y="134"/>
+            <point key="canvasLocation" x="2808.8000000000002" y="133.5832083958021"/>
         </scene>
         <!--Sound Three View Controller-->
         <scene sceneID="KPm-2P-hOU">
@@ -625,7 +645,7 @@
         <image name="Logomakr_9Dxe5s" width="447" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d7m-LP-nHK"/>
-        <segue reference="ChB-Ap-Nan"/>
+        <segue reference="Ocs-4N-aSv"/>
+        <segue reference="wmX-qL-tuT"/>
     </inferredMetricsTieBreakers>
 </document>
