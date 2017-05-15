@@ -135,13 +135,6 @@
                                     <segue destination="haZ-Gj-emY" kind="show" id="1fT-wU-SEC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jason" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjE-Pl-ftc">
-                                <rect key="frame" x="165" y="141" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -283,13 +276,6 @@
                                     <segue destination="vxY-Xg-PWO" kind="show" id="fg5-No-dnd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JAKE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlJ-Rv-VDI">
-                                <rect key="frame" x="166" y="193" width="41" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -308,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVu-dN-sVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2741.5999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2810" y="134"/>
         </scene>
         <!--Sound Three View Controller-->
         <scene sceneID="KPm-2P-hOU">
@@ -445,7 +431,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHd-kS-Yfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4586" y="134"/>
+            <point key="canvasLocation" x="4601" y="134"/>
         </scene>
         <!--Sound Five View Controller-->
         <scene sceneID="YLV-U2-wim">
@@ -648,6 +634,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ChB-Ap-Nan"/>
-        <segue reference="znw-fN-eOb"/>
+        <segue reference="wmX-qL-tuT"/>
     </inferredMetricsTieBreakers>
 </document>
