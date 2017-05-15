@@ -43,7 +43,7 @@ class SoundTwoViewController: UIViewController {
         audioBegin.prepareToPlay()
         audioBegin.play()
         timeLeft = 6
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(SoundOneViewController.timerRunning), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(SoundTwoViewController.timerRunning), userInfo: nil, repeats: true)
 
     }
     func timerRunning (){

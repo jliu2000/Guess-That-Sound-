@@ -180,9 +180,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wrong!                             Tap anywhere to return to home." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oX-KB-dqk">
-                                <rect key="frame" x="45" y="228" width="284" height="105"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oX-KB-dqk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="HIl-eU-XLy"/>
+                                    <constraint firstAttribute="height" constant="667" id="VaU-bY-N7y"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="667" id="ujv-YF-Zn9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="wDe-1K-1Hl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap anywhere to return home." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLk-Y9-BSv">
+                                <rect key="frame" x="72" y="369" width="230" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KPU-qn-gH8"/>
+                                    <constraint firstAttribute="width" constant="230" id="vsr-Ul-prk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -190,9 +206,11 @@
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="3oX-KB-dqk" firstAttribute="top" secondItem="FkF-F2-35h" secondAttribute="bottom" constant="208" id="3iF-Uc-DRt"/>
-                            <constraint firstItem="3oX-KB-dqk" firstAttribute="centerX" secondItem="kQI-BT-Eyq" secondAttribute="centerX" id="SIA-iT-5JA"/>
-                            <constraint firstItem="P3N-co-4v1" firstAttribute="top" secondItem="3oX-KB-dqk" secondAttribute="bottom" constant="334" id="gfx-eq-KCv"/>
+                            <constraint firstItem="aLk-Y9-BSv" firstAttribute="centerX" secondItem="kQI-BT-Eyq" secondAttribute="centerX" id="2EH-Yr-RCM"/>
+                            <constraint firstItem="aLk-Y9-BSv" firstAttribute="centerY" secondItem="kQI-BT-Eyq" secondAttribute="centerY" constant="46" id="8Vb-zm-xun"/>
+                            <constraint firstItem="3oX-KB-dqk" firstAttribute="centerX" secondItem="kQI-BT-Eyq" secondAttribute="centerX" id="AFW-Xv-aQQ"/>
+                            <constraint firstItem="3oX-KB-dqk" firstAttribute="top" secondItem="FkF-F2-35h" secondAttribute="bottom" constant="-20" id="TFC-V6-gtK"/>
+                            <constraint firstItem="P3N-co-4v1" firstAttribute="top" secondItem="3oX-KB-dqk" secondAttribute="bottom" id="Wbk-Xn-7iG"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="azo-1b-kx0" appends="YES" id="n9j-aF-cdl"/>
@@ -206,7 +224,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5934" y="982"/>
+            <point key="canvasLocation" x="5933.6000000000004" y="981.85907046476768"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KNO-DB-JRd">
@@ -393,6 +411,14 @@
                             <constraint firstItem="4oU-WT-bE5" firstAttribute="centerX" secondItem="q32-T1-cZj" secondAttribute="centerX" id="mKC-zA-YCK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backToStart" destination="UM3-eZ-Nel" id="aZx-Dx-wn1"/>
+                        <outlet property="correctAnswer" destination="9OL-C0-myG" id="DJx-fT-Iau"/>
+                        <outlet property="incorrectAnswer1" destination="4oU-WT-bE5" id="VBO-sW-Tu5"/>
+                        <outlet property="incorrectAnswer2" destination="q32-T1-cZj" id="5Kx-mn-E4C"/>
+                        <outlet property="incorrectAnswer3" destination="SY3-LA-siG" id="xPj-gr-93I"/>
+                        <outlet property="timerLabel" destination="76g-Q0-jyi" id="NYw-Zl-fI0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9B-ss-vMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -420,14 +446,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fta-4i-RDB">
                                 <rect key="frame" x="129" y="356" width="117" height="30"/>
                                 <state key="normal" title="Incorrect Answer"/>
+                                <connections>
+                                    <segue destination="vxY-Xg-PWO" kind="show" id="n4x-69-am6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twS-eV-QY2">
                                 <rect key="frame" x="129" y="394" width="117" height="30"/>
                                 <state key="normal" title="Incorrect Answer"/>
+                                <connections>
+                                    <segue destination="vxY-Xg-PWO" kind="show" id="Wb4-7D-IdQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlT-yd-RVP">
                                 <rect key="frame" x="131" y="432" width="117" height="30"/>
                                 <state key="normal" title="Incorrect Answer"/>
+                                <connections>
+                                    <segue destination="vxY-Xg-PWO" kind="show" id="UIR-sC-s8a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4l-HW-zcF">
                                 <rect key="frame" x="149" y="21" width="77" height="30"/>
