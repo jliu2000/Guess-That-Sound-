@@ -111,7 +111,7 @@
                                     <action selector="playSoundOne:" destination="G79-Ko-TiQ" eventType="touchUpInside" id="4zJ-q2-pEJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time Left: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nub-pb-en3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Left: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nub-pb-en3">
                                 <rect key="frame" x="0.0" y="639" width="82" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -134,7 +134,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Back To Start"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ChB-Ap-Nan"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="k7H-0q-q7m"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -312,6 +312,9 @@
                                     <constraint firstAttribute="width" constant="93" id="yFl-8S-iln"/>
                                 </constraints>
                                 <state key="normal" title="Back To Start"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="hSq-em-CSd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -408,6 +411,9 @@
                                     <constraint firstAttribute="width" constant="93" id="Iep-PC-Ndq"/>
                                 </constraints>
                                 <state key="normal" title="Back To Start"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="fEN-xU-4SZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -501,6 +507,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edS-DA-B9y">
                                 <rect key="frame" x="274" y="637" width="93" height="30"/>
                                 <state key="normal" title="Back To Start"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="vE9-i7-ygv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -594,6 +603,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K87-lz-0cs">
                                 <rect key="frame" x="273" y="637" width="93" height="30"/>
                                 <state key="normal" title="Back To Start"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="fCp-lC-Uh3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -687,6 +699,9 @@
                                     <constraint firstAttribute="width" constant="93" id="Yaj-fe-CWc"/>
                                 </constraints>
                                 <state key="normal" title="Back To Start"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bUY-e3-h1t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -737,6 +752,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asO-aD-tZ5">
                                 <rect key="frame" x="103" y="318" width="172" height="30"/>
                                 <state key="normal" title="Kazoo"/>
+                                <connections>
+                                    <segue destination="Vix-tq-WP1" kind="show" id="7CL-GM-rsT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkO-Ac-t4a">
                                 <rect key="frame" x="129" y="356" width="117" height="30"/>
@@ -772,6 +790,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkw-c9-HX9">
                                 <rect key="frame" x="273" y="637" width="93" height="30"/>
                                 <state key="normal" title="Back To Start"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="BBf-Hj-bj7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -806,12 +827,47 @@
             </objects>
             <point key="canvasLocation" x="7108" y="134"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="kon-Oe-hDR">
+            <objects>
+                <viewController id="Vix-tq-WP1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Axg-wT-ghM"/>
+                        <viewControllerLayoutGuide type="bottom" id="U52-9b-cy5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rTz-uu-9wd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M09-Be-3c4">
+                                <rect key="frame" x="141" y="185" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back To Start"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="iSm-jq-N5E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Victory!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKw-G7-htm">
+                                <rect key="frame" x="157" y="97" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4TG-1X-ouh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7925.6000000000004" y="131.78410794602701"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Logomakr_9Dxe5s" width="447" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ChB-Ap-Nan"/>
-        <segue reference="d7m-LP-nHK"/>
+        <segue reference="iSm-jq-N5E"/>
+        <segue reference="pcY-f4-0f3"/>
     </inferredMetricsTieBreakers>
 </document>
