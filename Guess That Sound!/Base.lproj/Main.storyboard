@@ -133,7 +133,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Left: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nub-pb-en3">
-                                <rect key="frame" x="111" y="168" width="287" height="38"/>
+                                <rect key="frame" x="16" y="20" width="287" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -148,17 +148,17 @@
                             <constraint firstItem="RG7-dw-sfK" firstAttribute="top" secondItem="r9Y-px-oFT" secondAttribute="bottom" constant="8" symbolic="YES" id="MxH-gW-a7k"/>
                             <constraint firstItem="pXY-X2-0B8" firstAttribute="centerX" secondItem="RG7-dw-sfK" secondAttribute="centerX" id="NeU-Op-mzr"/>
                             <constraint firstItem="m0b-SY-hNh" firstAttribute="top" secondItem="0Fh-W6-EkM" secondAttribute="bottom" constant="8" symbolic="YES" id="Pm6-GB-2IL"/>
-                            <constraint firstAttribute="trailing" secondItem="nub-pb-en3" secondAttribute="trailing" constant="-23" id="Udf-D5-vHE"/>
+                            <constraint firstAttribute="trailing" secondItem="nub-pb-en3" secondAttribute="trailing" constant="72" id="Udf-D5-vHE"/>
                             <constraint firstItem="m0b-SY-hNh" firstAttribute="centerX" secondItem="qh9-0A-kVh" secondAttribute="centerX" id="UgE-JI-aPd"/>
                             <constraint firstItem="pXY-X2-0B8" firstAttribute="leading" secondItem="qh9-0A-kVh" secondAttribute="leadingMargin" constant="60" id="VDl-Ug-KCn"/>
                             <constraint firstItem="pXY-X2-0B8" firstAttribute="top" secondItem="0Fh-W6-EkM" secondAttribute="top" id="XQb-fM-ANw"/>
                             <constraint firstItem="0Fh-W6-EkM" firstAttribute="leading" secondItem="qh9-0A-kVh" secondAttribute="leadingMargin" constant="72" id="dB2-Xd-U7X"/>
                             <constraint firstItem="0Fh-W6-EkM" firstAttribute="centerY" secondItem="qh9-0A-kVh" secondAttribute="centerY" id="eM8-nx-bmd"/>
-                            <constraint firstItem="pXY-X2-0B8" firstAttribute="top" secondItem="nub-pb-en3" secondAttribute="bottom" constant="120" id="eYa-mO-UDo"/>
-                            <constraint firstItem="nub-pb-en3" firstAttribute="leading" secondItem="qh9-0A-kVh" secondAttribute="leading" constant="111" id="hBU-l0-dPW"/>
+                            <constraint firstItem="pXY-X2-0B8" firstAttribute="top" secondItem="nub-pb-en3" secondAttribute="bottom" constant="268" id="eYa-mO-UDo"/>
+                            <constraint firstItem="nub-pb-en3" firstAttribute="leading" secondItem="qh9-0A-kVh" secondAttribute="leading" constant="16" id="hBU-l0-dPW"/>
                             <constraint firstItem="Oyi-jM-rXr" firstAttribute="centerX" secondItem="m0b-SY-hNh" secondAttribute="centerX" constant="-3" id="ld6-i4-0sT"/>
                             <constraint firstItem="Njb-sA-O2r" firstAttribute="top" secondItem="pXY-X2-0B8" secondAttribute="bottom" constant="208" id="vN0-YX-1eN"/>
-                            <constraint firstItem="nub-pb-en3" firstAttribute="top" secondItem="Oyi-jM-rXr" secondAttribute="bottom" constant="8" id="zfM-I0-Omf"/>
+                            <constraint firstItem="nub-pb-en3" firstAttribute="top" secondItem="Oyi-jM-rXr" secondAttribute="bottom" constant="-140" id="zfM-I0-Omf"/>
                             <constraint firstItem="m0b-SY-hNh" firstAttribute="centerX" secondItem="r9Y-px-oFT" secondAttribute="centerX" id="zr2-Y1-Hlo"/>
                         </constraints>
                     </view>
@@ -168,6 +168,7 @@
                         <outlet property="incorrectAnswer1" destination="m0b-SY-hNh" id="QOE-SG-C4l"/>
                         <outlet property="incorrectAnswer2" destination="r9Y-px-oFT" id="jnP-dd-M2z"/>
                         <outlet property="incorrectAnswer3" destination="RG7-dw-sfK" id="dzR-97-0PQ"/>
+                        <outlet property="playSoundButton" destination="Oyi-jM-rXr" id="ndr-kk-rvw"/>
                         <outlet property="timerLabel" destination="nub-pb-en3" id="G7S-hh-2Cj"/>
                     </connections>
                 </viewController>
@@ -343,6 +344,7 @@
                         <outlet property="incorrectAnswer1" destination="UkM-LL-iTQ" id="erB-xO-UWO"/>
                         <outlet property="incorrectAnswer2" destination="tLJ-de-m0A" id="Euw-v3-c7w"/>
                         <outlet property="incorrectAnswer3" destination="hKV-FS-YOl" id="t45-kl-WMw"/>
+                        <outlet property="playSoundButton" destination="hZc-KP-G7l" id="GcS-5j-gZw"/>
                         <outlet property="timerLabel" destination="Orf-Fp-hkd" id="8gO-1F-taT"/>
                     </connections>
                 </viewController>
@@ -442,6 +444,7 @@
                         <outlet property="incorrectAnswer1" destination="4oU-WT-bE5" id="VBO-sW-Tu5"/>
                         <outlet property="incorrectAnswer2" destination="q32-T1-cZj" id="5Kx-mn-E4C"/>
                         <outlet property="incorrectAnswer3" destination="SY3-LA-siG" id="xPj-gr-93I"/>
+                        <outlet property="playSoundButton" destination="y8U-Vj-8gI" id="3bZ-Br-qXB"/>
                         <outlet property="timerLabel" destination="76g-Q0-jyi" id="NYw-Zl-fI0"/>
                     </connections>
                 </viewController>
@@ -538,6 +541,7 @@
                         <outlet property="incorrectAnswer1" destination="Fta-4i-RDB" id="WYz-2W-DlG"/>
                         <outlet property="incorrectAnswer2" destination="twS-eV-QY2" id="XTa-pd-fJO"/>
                         <outlet property="incorrectAnswer3" destination="zlT-yd-RVP" id="cKB-8I-0QH"/>
+                        <outlet property="playSoundButton" destination="X4l-HW-zcF" id="NYL-zT-l7v"/>
                         <outlet property="timerLabel" destination="Np9-Nx-uf8" id="ZWA-QE-fxL"/>
                     </connections>
                 </viewController>
@@ -634,6 +638,7 @@
                         <outlet property="incorrectAnswer" destination="hXz-Wz-Mgm" id="a1X-Rw-4ID"/>
                         <outlet property="incorrectAnswer2" destination="mf1-WO-FRF" id="OT2-f7-MK1"/>
                         <outlet property="incorrectAnswer3" destination="6Gp-Ar-pgr" id="iiK-qo-kLN"/>
+                        <outlet property="playSoundButton" destination="8pL-Y0-Jjd" id="sm7-ZW-Y86"/>
                         <outlet property="timerLabel" destination="4TO-v5-37w" id="kYh-BH-E2s"/>
                     </connections>
                 </viewController>
@@ -731,6 +736,7 @@
                         <outlet property="incorrectAnswer1" destination="cTw-UP-2xZ" id="dYa-Zn-qdQ"/>
                         <outlet property="incorrectAnswer2" destination="iqe-kq-FBH" id="ulo-Gn-T0a"/>
                         <outlet property="incorrectAnswer3" destination="orX-9b-rq1" id="XeG-Tv-mvf"/>
+                        <outlet property="playSoundButton" destination="tuj-hC-P7E" id="Sgv-pg-dRw"/>
                         <outlet property="timerLabel" destination="gpY-Kl-vVp" id="ine-gX-Emt"/>
                     </connections>
                 </viewController>
@@ -821,6 +827,7 @@
                         <outlet property="incorrectAnswer" destination="KkO-Ac-t4a" id="Ong-Jm-3YU"/>
                         <outlet property="incorrectAnswer2" destination="8Hp-dv-Gvb" id="gTN-mr-E0s"/>
                         <outlet property="incorrectAnswer3" destination="br6-3p-vwc" id="wps-sq-V7E"/>
+                        <outlet property="playSoundButton" destination="nNz-sT-vd2" id="Ed5-r0-e8z"/>
                         <outlet property="timerLabel" destination="m4A-Md-eB0" id="96B-yL-iFC"/>
                     </connections>
                 </viewController>
@@ -868,7 +875,7 @@
         <image name="Logomakr_9Dxe5s" width="447" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="k7H-0q-q7m"/>
-        <segue reference="d7m-LP-nHK"/>
+        <segue reference="hSq-em-CSd"/>
+        <segue reference="wmX-qL-tuT"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -23,6 +23,7 @@ class SoundSixViewController: UIViewController {
     @IBOutlet weak var incorrectAnswer3: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var backToStart: UIButton!
+    @IBOutlet weak var playSoundButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +61,7 @@ class SoundSixViewController: UIViewController {
             incorrectAnswer2.isHidden = true
             incorrectAnswer3.isHidden = true
             backToStart.isHidden = false
+            playSoundButton.isHidden = true
         }
     }
     

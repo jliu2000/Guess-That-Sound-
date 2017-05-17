@@ -22,6 +22,7 @@ class SoundFourViewController: UIViewController {
     @IBOutlet weak var incorrectAnswer2: UIButton!
     @IBOutlet weak var incorrectAnswer3: UIButton!
     @IBOutlet weak var backToStart: UIButton!
+    @IBOutlet weak var playSoundButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +57,7 @@ class SoundFourViewController: UIViewController {
             incorrectAnswer2.isHidden = true
             incorrectAnswer3.isHidden = true
             backToStart.isHidden = false
+            playSoundButton.isHidden = true
         }
     }
     
