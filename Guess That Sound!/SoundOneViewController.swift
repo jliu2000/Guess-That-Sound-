@@ -61,6 +61,7 @@ class SoundOneViewController: UIViewController {
             incorrectAnswer2.isHidden = true
             incorrectAnswer3.isHidden = true
             backToStart.isHidden = false
+            
         }
     }
 }
