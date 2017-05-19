@@ -29,13 +29,29 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCr-fa-KBG">
-                                <rect key="frame" x="114" y="280" width="146" height="107"/>
+                                <rect key="frame" x="114" y="219" width="146" height="107"/>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="53"/>
                                 <state key="normal" title="Start">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="G79-Ko-TiQ" kind="show" id="62r-pV-Ckv"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logomakr_75MLnM" translatesAutoresizingMaskIntoConstraints="NO" id="IcB-g9-Egl">
+                                <rect key="frame" x="67" y="395" width="240" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="Jir-Dv-Rsz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2T-px-C2e">
+                                <rect key="frame" x="107" y="309" width="161" height="48"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <state key="normal" title="How To Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2JU-A5-WyJ" kind="show" id="1Rp-yi-fQJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,10 +60,15 @@
                             <constraint firstItem="VCr-fa-KBG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="98" id="8fX-zq-5fd"/>
                             <constraint firstItem="1GT-od-Dn7" firstAttribute="centerX" secondItem="VCr-fa-KBG" secondAttribute="centerX" id="Akv-eG-bH5"/>
                             <constraint firstAttribute="trailing" secondItem="1GT-od-Dn7" secondAttribute="trailing" id="NkD-uf-Xde"/>
-                            <constraint firstItem="VCr-fa-KBG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cA7-cH-Tey"/>
+                            <constraint firstItem="VCr-fa-KBG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-61" id="cA7-cH-Tey"/>
+                            <constraint firstItem="IcB-g9-Egl" firstAttribute="centerX" secondItem="N2T-px-C2e" secondAttribute="centerX" id="goR-vO-5Hv"/>
+                            <constraint firstItem="IcB-g9-Egl" firstAttribute="top" secondItem="N2T-px-C2e" secondAttribute="bottom" constant="38" id="hkm-lX-5gD"/>
                             <constraint firstItem="1GT-od-Dn7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j68-W6-848"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VCr-fa-KBG" secondAttribute="bottom" constant="280" id="mV9-FC-epi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IcB-g9-Egl" secondAttribute="bottom" constant="82" id="kPx-XI-5mF"/>
+                            <constraint firstItem="IcB-g9-Egl" firstAttribute="centerX" secondItem="VCr-fa-KBG" secondAttribute="centerX" id="kh4-dW-FFZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VCr-fa-KBG" secondAttribute="bottom" constant="341" id="mV9-FC-epi"/>
                             <constraint firstItem="1GT-od-Dn7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yYw-lR-Cep"/>
+                            <constraint firstItem="IcB-g9-Egl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="yaf-ae-lG9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XXI-lP-8DF"/>
@@ -55,6 +76,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="134.48275862068968"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hxp-mn-cf2">
+            <objects>
+                <viewController id="2JU-A5-WyJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GgZ-V8-lsa"/>
+                        <viewControllerLayoutGuide type="bottom" id="hU2-H0-foV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2fm-ge-vc5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4G6-hI-IfP">
+                                <rect key="frame" x="16" y="169" width="359" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Welcome to Guess that Sound! The objective of this game is to make it through several sound-guessing challenges. A timer will start when you initiate each trial by playing pressing a button to play each sound. If you run out of time, you will have to return here, the start menu! If you guess incorrectly you will be sent to a screen that will also take you back here, but you are also afforded the opportunity to take another guess if you still have time remaining! Good luck!</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logomakr_75MLnM" translatesAutoresizingMaskIntoConstraints="NO" id="j3q-lw-HZd">
+                                <rect key="frame" x="67" y="465" width="240" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How To Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cY-Uf-124">
+                                <rect key="frame" x="65" y="54" width="245" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7oy-C8-FK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="841.52923538230891"/>
         </scene>
         <!--Sound One View Controller-->
         <scene sceneID="eqE-NE-QHZ">
@@ -68,12 +128,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXY-X2-0B8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXY-X2-0B8">
                                 <rect key="frame" x="0.0" y="281" width="375" height="105"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="37"/>
                                 <state key="normal" title="Back To Start">
-                                    <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="k7H-0q-q7m"/>
@@ -82,6 +142,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RG7-dw-sfK">
                                 <rect key="frame" x="0.0" y="504" width="375" height="85"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="OAX-Kn-wMo"/>
+                                    <constraint firstAttribute="width" constant="375" id="jAw-5m-BaI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Elevator">
                                     <color key="titleColor" red="0.018992206081748009" green="0.015217387117445469" blue="0.0051254532299935818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -94,6 +158,8 @@
                                 <rect key="frame" x="0.0" y="353" width="375" height="78"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="8Pj-qJ-tYL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="78" id="igT-kz-NIs"/>
                                     <constraint firstAttribute="height" constant="78" id="s09-7z-Ygz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
@@ -121,7 +187,9 @@
                                 <rect key="frame" x="0.0" y="588" width="375" height="79"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="1Sr-XT-fg6"/>
                                     <constraint firstAttribute="height" constant="79" id="WNy-v5-kD2"/>
+                                    <constraint firstAttribute="width" constant="375" id="mKa-2Z-9LN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Video Game">
@@ -136,6 +204,8 @@
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="8nW-Io-dzu"/>
+                                    <constraint firstAttribute="width" constant="375" id="Hq5-wp-MqU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="76" id="TVa-53-q5d"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Police Siren">
@@ -167,10 +237,10 @@
                             <constraint firstItem="pXY-X2-0B8" firstAttribute="trailing" secondItem="m0b-SY-hNh" secondAttribute="trailing" id="CVw-AH-oKF"/>
                             <constraint firstItem="Njb-sA-O2r" firstAttribute="top" secondItem="RG7-dw-sfK" secondAttribute="bottom" constant="78" id="Dux-0t-vns"/>
                             <constraint firstItem="Oyi-jM-rXr" firstAttribute="top" secondItem="qh9-0A-kVh" secondAttribute="top" constant="198" id="Dzj-ad-YFp"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="pXY-X2-0B8" secondAttribute="bottom" constant="-2" id="FB4-1c-AWb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="pXY-X2-0B8" secondAttribute="bottom" constant="281" id="FB4-1c-AWb"/>
                             <constraint firstItem="Oyi-jM-rXr" firstAttribute="centerX" secondItem="0Fh-W6-EkM" secondAttribute="centerX" id="QyB-yt-lfJ"/>
                             <constraint firstAttribute="trailing" secondItem="0Fh-W6-EkM" secondAttribute="trailing" id="Yd2-ub-w0g"/>
-                            <constraint firstItem="pXY-X2-0B8" firstAttribute="top" secondItem="qh9-0A-kVh" secondAttribute="top" id="b1L-mX-G0C"/>
+                            <constraint firstItem="pXY-X2-0B8" firstAttribute="top" secondItem="qh9-0A-kVh" secondAttribute="top" constant="281" id="b1L-mX-G0C"/>
                             <constraint firstItem="0Fh-W6-EkM" firstAttribute="trailing" secondItem="m0b-SY-hNh" secondAttribute="trailing" id="cWO-QW-SGZ"/>
                             <constraint firstItem="r9Y-px-oFT" firstAttribute="top" secondItem="m0b-SY-hNh" secondAttribute="bottom" constant="81" id="ghj-ah-20A"/>
                             <constraint firstItem="m0b-SY-hNh" firstAttribute="leading" secondItem="RG7-dw-sfK" secondAttribute="leading" id="ghs-5U-xdb"/>
@@ -216,17 +286,18 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="667" id="ujv-YF-Zn9"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="wDe-1K-1Hl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="42"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="42"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap anywhere to return home." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLk-Y9-BSv">
-                                <rect key="frame" x="72" y="369" width="230" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap anywhere to return to the start, or if you still have some time left hit &quot;Back&quot; and guess again!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLk-Y9-BSv">
+                                <rect key="frame" x="72" y="369" width="230" height="95"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="KPU-qn-gH8"/>
-                                    <constraint firstAttribute="width" constant="230" id="vsr-Ul-prk"/>
+                                    <constraint firstAttribute="width" constant="230" id="PoL-Za-V2V"/>
+                                    <constraint firstAttribute="height" constant="95" id="zp2-pl-IP9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -234,9 +305,9 @@
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="aLk-Y9-BSv" firstAttribute="centerX" secondItem="kQI-BT-Eyq" secondAttribute="centerX" id="2EH-Yr-RCM"/>
-                            <constraint firstItem="aLk-Y9-BSv" firstAttribute="centerY" secondItem="kQI-BT-Eyq" secondAttribute="centerY" constant="46" id="8Vb-zm-xun"/>
+                            <constraint firstItem="aLk-Y9-BSv" firstAttribute="centerX" secondItem="3oX-KB-dqk" secondAttribute="centerX" id="2WI-cd-mWn"/>
                             <constraint firstItem="3oX-KB-dqk" firstAttribute="centerX" secondItem="kQI-BT-Eyq" secondAttribute="centerX" id="AFW-Xv-aQQ"/>
+                            <constraint firstItem="P3N-co-4v1" firstAttribute="top" secondItem="aLk-Y9-BSv" secondAttribute="bottom" constant="203" id="OaL-zV-fIR"/>
                             <constraint firstItem="3oX-KB-dqk" firstAttribute="top" secondItem="FkF-F2-35h" secondAttribute="bottom" constant="-20" id="TFC-V6-gtK"/>
                             <constraint firstItem="P3N-co-4v1" firstAttribute="top" secondItem="3oX-KB-dqk" secondAttribute="bottom" id="Wbk-Xn-7iG"/>
                         </constraints>
@@ -292,7 +363,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="37"/>
                                 <state key="normal" title="Back To Start">
-                                    <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="hSq-em-CSd"/>
@@ -302,6 +373,8 @@
                                 <rect key="frame" x="-14" y="353" width="408" height="79"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="408" id="Drl-TR-L4O"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="GKu-af-g2Y"/>
                                     <constraint firstAttribute="height" constant="79" id="nme-1A-Da6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
@@ -315,6 +388,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkM-LL-iTQ">
                                 <rect key="frame" x="0.0" y="586" width="375" height="83"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="VKh-en-2RU"/>
+                                    <constraint firstAttribute="height" constant="83" id="YSC-Xd-cCX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Aliens">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -328,6 +405,8 @@
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="9eY-ws-M66"/>
+                                    <constraint firstAttribute="width" constant="375" id="A5i-BJ-KZT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="HEC-AR-6NY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Whale">
@@ -341,7 +420,9 @@
                                 <rect key="frame" x="0.0" y="507" width="375" height="81"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="81" id="6tE-Gf-XmC"/>
                                     <constraint firstAttribute="height" constant="81" id="r91-gA-9h8"/>
+                                    <constraint firstAttribute="width" constant="375" id="svZ-LK-bjP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="People">
@@ -379,14 +460,14 @@
                         <constraints>
                             <constraint firstItem="tLJ-de-m0A" firstAttribute="top" secondItem="qf4-qd-eBv" secondAttribute="bottom" constant="75" id="5N8-eO-wIx"/>
                             <constraint firstItem="hKV-FS-YOl" firstAttribute="trailing" secondItem="tLJ-de-m0A" secondAttribute="trailing" id="7HH-Nb-kw7"/>
-                            <constraint firstItem="tLJ-de-m0A" firstAttribute="trailing" secondItem="UkM-LL-iTQ" secondAttribute="trailing" id="7eb-Rd-BPx"/>
+                            <constraint firstItem="UkM-LL-iTQ" firstAttribute="leading" secondItem="tLJ-de-m0A" secondAttribute="leading" id="7zR-gR-Cru"/>
+                            <constraint firstItem="UkM-LL-iTQ" firstAttribute="top" secondItem="hKV-FS-YOl" secondAttribute="bottom" constant="77" id="9Zq-w5-Y03"/>
                             <constraint firstItem="hKV-FS-YOl" firstAttribute="leading" secondItem="tLJ-de-m0A" secondAttribute="leading" id="HXr-Gz-fas"/>
-                            <constraint firstItem="UkM-LL-iTQ" firstAttribute="top" secondItem="hKV-FS-YOl" secondAttribute="bottom" constant="77" id="IZP-N7-seS"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="UkM-LL-iTQ" secondAttribute="bottom" constant="-2" id="LMM-Zc-KPH"/>
                             <constraint firstItem="hKV-FS-YOl" firstAttribute="leading" secondItem="Bzn-Um-22Z" secondAttribute="leading" id="VBn-j4-qQy"/>
                             <constraint firstItem="9IF-2A-i4l" firstAttribute="trailing" secondItem="Bzn-Um-22Z" secondAttribute="trailingMargin" id="XgR-Ub-ypO"/>
                             <constraint firstItem="hZc-KP-G7l" firstAttribute="centerX" secondItem="hKV-FS-YOl" secondAttribute="centerX" id="ZZP-Er-MVN"/>
                             <constraint firstItem="Orf-Fp-hkd" firstAttribute="leading" secondItem="Bzn-Um-22Z" secondAttribute="leadingMargin" id="aA5-PM-e0I"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="UkM-LL-iTQ" secondAttribute="bottom" constant="-2" id="cO4-nd-hrv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Orf-Fp-hkd" secondAttribute="trailing" constant="33" id="fQ6-T0-HEJ"/>
                             <constraint firstItem="Orf-Fp-hkd" firstAttribute="top" secondItem="cTc-64-VAN" secondAttribute="bottom" constant="8" symbolic="YES" id="icx-p9-eNN"/>
                             <constraint firstItem="hKV-FS-YOl" firstAttribute="top" secondItem="9IF-2A-i4l" secondAttribute="bottom" constant="63" id="lBU-yG-1Sk"/>
@@ -395,10 +476,10 @@
                             <constraint firstAttribute="trailing" secondItem="hKV-FS-YOl" secondAttribute="trailing" id="qmc-Kg-AdK"/>
                             <constraint firstItem="qf4-qd-eBv" firstAttribute="leading" secondItem="Bzn-Um-22Z" secondAttribute="leadingMargin" constant="-30" id="ruz-Ev-f4i"/>
                             <constraint firstItem="hZc-KP-G7l" firstAttribute="leading" secondItem="Bzn-Um-22Z" secondAttribute="leadingMargin" constant="94" id="s3y-6D-ins"/>
-                            <constraint firstItem="tLJ-de-m0A" firstAttribute="leading" secondItem="UkM-LL-iTQ" secondAttribute="leading" id="t2l-aa-u3q"/>
                             <constraint firstItem="9IF-2A-i4l" firstAttribute="centerY" secondItem="Bzn-Um-22Z" secondAttribute="centerY" id="vgo-cp-Lxb"/>
                             <constraint firstItem="9IF-2A-i4l" firstAttribute="top" secondItem="hZc-KP-G7l" secondAttribute="bottom" constant="76" id="x2S-4C-CDP"/>
                             <constraint firstItem="egf-Ui-Tdh" firstAttribute="top" secondItem="tLJ-de-m0A" secondAttribute="bottom" constant="79" id="xXB-Oj-RbZ"/>
+                            <constraint firstItem="UkM-LL-iTQ" firstAttribute="trailing" secondItem="tLJ-de-m0A" secondAttribute="trailing" id="zkC-jM-BQr"/>
                         </constraints>
                     </view>
                     <connections>
@@ -431,9 +512,9 @@
                                 <rect key="frame" x="0.0" y="506" width="375" height="82"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="wNj-lZ-fTu"/>
+                                    <constraint firstAttribute="height" constant="82" id="w3P-Af-hfy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Wind in a Window">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -442,12 +523,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY3-LA-siG">
-                                <rect key="frame" x="-10" y="428" width="385" height="81"/>
+                                <rect key="frame" x="0.0" y="428" width="375" height="81"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="81" id="DW3-sA-gAV"/>
+                                    <constraint firstAttribute="width" constant="375" id="Dag-BV-cc9"/>
+                                    <constraint firstAttribute="height" constant="81" id="fca-y6-BKN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Lawnmower">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -458,7 +540,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OL-C0-myG">
                                 <rect key="frame" x="0.0" y="585" width="375" height="82"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="GWr-eG-LSv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Car">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -467,12 +552,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oU-WT-bE5">
-                                <rect key="frame" x="-10" y="356" width="395" height="74"/>
+                                <rect key="frame" x="0.0" y="356" width="375" height="74"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="5x2-AS-6ep"/>
+                                    <constraint firstAttribute="height" constant="74" id="558-Ls-aTE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Whistle">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -482,12 +567,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UM3-eZ-Nel">
                                 <rect key="frame" x="63" y="308" width="248" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="9iK-r1-ivu"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="37"/>
                                 <state key="normal" title="Back To Start">
-                                    <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="fEN-xU-4SZ"/>
@@ -503,12 +585,9 @@
                                     <action selector="playSoundThreeOnButtonTapped:" destination="KS4-Ai-aVn" eventType="touchUpInside" id="0vj-QT-Zoz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Left: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76g-Q0-jyi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Left: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76g-Q0-jyi">
                                 <rect key="frame" x="16" y="28" width="194" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="MpM-uP-sOd"/>
-                                    <constraint firstAttribute="width" constant="194" id="hrX-FU-CLa"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="30"/>
                                 <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -517,26 +596,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="9OL-C0-myG" firstAttribute="top" secondItem="SY3-LA-siG" secondAttribute="bottom" constant="76" id="4zC-2D-yF9"/>
-                            <constraint firstItem="q32-T1-cZj" firstAttribute="leading" secondItem="nXH-vu-VC2" secondAttribute="leading" id="5T2-94-VCp"/>
-                            <constraint firstItem="HCh-wT-qzz" firstAttribute="top" secondItem="q32-T1-cZj" secondAttribute="bottom" constant="79" id="AaM-CJ-Zbh"/>
-                            <constraint firstItem="SY3-LA-siG" firstAttribute="top" secondItem="UM3-eZ-Nel" secondAttribute="bottom" constant="70" id="DCT-tN-QXM"/>
-                            <constraint firstItem="UM3-eZ-Nel" firstAttribute="centerY" secondItem="nXH-vu-VC2" secondAttribute="centerY" id="M5k-wS-DJm"/>
-                            <constraint firstItem="q32-T1-cZj" firstAttribute="trailing" secondItem="9OL-C0-myG" secondAttribute="trailing" id="Q6O-bi-5k6"/>
-                            <constraint firstItem="4oU-WT-bE5" firstAttribute="centerX" secondItem="q32-T1-cZj" secondAttribute="centerX" id="RXZ-8p-KM3"/>
-                            <constraint firstItem="SY3-LA-siG" firstAttribute="trailing" secondItem="q32-T1-cZj" secondAttribute="trailing" id="Rvy-3u-vW5"/>
-                            <constraint firstItem="76g-Q0-jyi" firstAttribute="leading" secondItem="nXH-vu-VC2" secondAttribute="leadingMargin" id="Vjf-7r-0CX"/>
-                            <constraint firstItem="q32-T1-cZj" firstAttribute="leading" secondItem="9OL-C0-myG" secondAttribute="leading" id="W9X-NV-VZM"/>
-                            <constraint firstAttribute="trailing" secondItem="SY3-LA-siG" secondAttribute="trailing" id="Z4f-eP-XNt"/>
-                            <constraint firstItem="UM3-eZ-Nel" firstAttribute="centerX" secondItem="4oU-WT-bE5" secondAttribute="centerX" id="ZhA-F4-TVN"/>
-                            <constraint firstItem="9OL-C0-myG" firstAttribute="bottom" secondItem="HCh-wT-qzz" secondAttribute="top" id="cJj-uP-LuX"/>
-                            <constraint firstItem="UM3-eZ-Nel" firstAttribute="leading" secondItem="nXH-vu-VC2" secondAttribute="leadingMargin" constant="47" id="cSI-G8-gNT"/>
-                            <constraint firstItem="UM3-eZ-Nel" firstAttribute="top" secondItem="y8U-Vj-8gI" secondAttribute="bottom" constant="76" id="jZn-ld-5wp"/>
-                            <constraint firstItem="4oU-WT-bE5" firstAttribute="leading" secondItem="SY3-LA-siG" secondAttribute="leading" id="kKb-hQ-RCi"/>
-                            <constraint firstItem="76g-Q0-jyi" firstAttribute="top" secondItem="zEL-y9-EER" secondAttribute="bottom" constant="8" symbolic="YES" id="nhP-mp-Ko2"/>
-                            <constraint firstItem="4oU-WT-bE5" firstAttribute="leading" secondItem="nXH-vu-VC2" secondAttribute="leadingMargin" constant="-26" id="seb-Ei-NwF"/>
-                            <constraint firstItem="q32-T1-cZj" firstAttribute="top" secondItem="4oU-WT-bE5" secondAttribute="bottom" constant="76" id="x9q-8F-Aq2"/>
-                            <constraint firstItem="y8U-Vj-8gI" firstAttribute="centerX" secondItem="UM3-eZ-Nel" secondAttribute="centerX" id="xXV-qr-dCW"/>
+                            <constraint firstItem="HCh-wT-qzz" firstAttribute="top" secondItem="q32-T1-cZj" secondAttribute="bottom" constant="79" id="3Xq-z0-Acx"/>
+                            <constraint firstItem="9OL-C0-myG" firstAttribute="leading" secondItem="q32-T1-cZj" secondAttribute="leading" id="84k-sk-jeD"/>
+                            <constraint firstItem="UM3-eZ-Nel" firstAttribute="centerY" secondItem="nXH-vu-VC2" secondAttribute="centerY" id="DON-GO-AOL"/>
+                            <constraint firstItem="SY3-LA-siG" firstAttribute="top" secondItem="UM3-eZ-Nel" secondAttribute="bottom" constant="70" id="Jd0-pZ-9Ed"/>
+                            <constraint firstItem="UM3-eZ-Nel" firstAttribute="leading" secondItem="nXH-vu-VC2" secondAttribute="leadingMargin" constant="47" id="MsK-OM-k9Q"/>
+                            <constraint firstItem="9OL-C0-myG" firstAttribute="bottom" secondItem="HCh-wT-qzz" secondAttribute="top" id="O2f-vD-R8s"/>
+                            <constraint firstItem="q32-T1-cZj" firstAttribute="top" secondItem="4oU-WT-bE5" secondAttribute="bottom" constant="76" id="OWa-kJ-VxJ"/>
+                            <constraint firstItem="9OL-C0-myG" firstAttribute="trailing" secondItem="SY3-LA-siG" secondAttribute="trailing" id="Oi0-Qo-oSr"/>
+                            <constraint firstItem="9OL-C0-myG" firstAttribute="leading" secondItem="4oU-WT-bE5" secondAttribute="leading" id="QLw-Kn-0UP"/>
+                            <constraint firstItem="UM3-eZ-Nel" firstAttribute="top" secondItem="y8U-Vj-8gI" secondAttribute="bottom" constant="76" id="RHu-WI-Eit"/>
+                            <constraint firstItem="9OL-C0-myG" firstAttribute="centerX" secondItem="y8U-Vj-8gI" secondAttribute="centerX" id="Uua-gg-Vs7"/>
+                            <constraint firstAttribute="trailing" secondItem="9OL-C0-myG" secondAttribute="trailing" id="cQL-Ne-52U"/>
+                            <constraint firstItem="9OL-C0-myG" firstAttribute="trailing" secondItem="4oU-WT-bE5" secondAttribute="trailing" id="daW-Tn-y1M"/>
+                            <constraint firstItem="9OL-C0-myG" firstAttribute="trailing" secondItem="q32-T1-cZj" secondAttribute="trailing" id="i2q-2P-1bK"/>
+                            <constraint firstItem="9OL-C0-myG" firstAttribute="centerX" secondItem="UM3-eZ-Nel" secondAttribute="centerX" id="sXm-gv-1p0"/>
+                            <constraint firstItem="9OL-C0-myG" firstAttribute="leading" secondItem="nXH-vu-VC2" secondAttribute="leading" id="vZD-fZ-ttf"/>
+                            <constraint firstItem="9OL-C0-myG" firstAttribute="top" secondItem="SY3-LA-siG" secondAttribute="bottom" constant="76" id="vk8-bd-Rrh"/>
                         </constraints>
                     </view>
                     <connections>
@@ -568,6 +644,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPS-gc-Q4d">
                                 <rect key="frame" x="0.0" y="506" width="375" height="83"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Mzd-Hz-POr"/>
+                                    <constraint firstAttribute="height" constant="83" id="mZb-tx-L3R"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Nail Gun">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -580,6 +660,8 @@
                                 <rect key="frame" x="0.0" y="431" width="375" height="78"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="78" id="GQF-Jj-ifA"/>
+                                    <constraint firstAttribute="width" constant="375" id="asx-It-64h"/>
                                     <constraint firstAttribute="height" constant="78" id="bCA-CQ-4Dd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
@@ -594,7 +676,9 @@
                                 <rect key="frame" x="0.0" y="355" width="375" height="79"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="M8t-46-LDm"/>
                                     <constraint firstAttribute="height" constant="79" id="Nwy-PI-sWV"/>
+                                    <constraint firstAttribute="width" constant="375" id="a1M-7k-8tb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Balloon Popping">
@@ -608,6 +692,8 @@
                                 <rect key="frame" x="0.0" y="586" width="375" height="81"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="81" id="6tu-1n-JVQ"/>
+                                    <constraint firstAttribute="width" constant="375" id="8pp-fV-1g8"/>
                                     <constraint firstAttribute="height" constant="81" id="h42-lF-KKa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
@@ -625,7 +711,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="37"/>
                                 <state key="normal" title="Back To Start">
-                                    <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="vE9-i7-ygv"/>
@@ -707,6 +793,7 @@
                                 <rect key="frame" x="0.0" y="430" width="375" height="79"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="bOm-3D-lkO"/>
                                     <constraint firstAttribute="height" constant="79" id="qLS-Tz-l2e"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
@@ -721,7 +808,9 @@
                                 <rect key="frame" x="0.0" y="354" width="375" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="5SR-JC-Nlm"/>
                                     <constraint firstAttribute="height" constant="80" id="Hqy-8V-MPk"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="nb1-2v-I0H"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Bass">
@@ -736,6 +825,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="4PQ-Nq-zWl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="RkA-39-Ujy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Violin">
@@ -748,6 +838,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gp-Ar-pgr">
                                 <rect key="frame" x="0.0" y="588" width="375" height="79"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="MF0-jm-47F"/>
+                                    <constraint firstAttribute="height" constant="79" id="rFw-lA-bWp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Piano">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -787,7 +881,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="37"/>
                                 <state key="normal" title="Back To Start">
-                                    <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="fCp-lC-Uh3"/>
@@ -850,6 +944,7 @@
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="gJt-PU-45w"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="84" id="t6N-G6-zCr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Truck">
@@ -862,6 +957,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTw-UP-2xZ">
                                 <rect key="frame" x="0.0" y="433" width="375" height="85"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="go4-SM-Fnc"/>
+                                    <constraint firstAttribute="height" constant="85" id="jZI-Nc-zca"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="ua5-YC-kTA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="SUV">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -873,6 +973,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqe-kq-FBH">
                                 <rect key="frame" x="0.0" y="509" width="375" height="86"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="86" id="6Jh-f2-Dn9"/>
+                                    <constraint firstAttribute="width" constant="375" id="odp-lD-sSx"/>
+                                    <constraint firstAttribute="height" constant="86" id="pCF-tN-hVa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Airplane">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -885,6 +990,8 @@
                                 <rect key="frame" x="0.0" y="587" width="375" height="80"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="WWi-im-0p0"/>
+                                    <constraint firstAttribute="width" constant="375" id="caR-6D-Gcm"/>
                                     <constraint firstAttribute="height" constant="80" id="oev-ua-lP4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
@@ -913,7 +1020,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="37"/>
                                 <state key="normal" title="Back To Start">
-                                    <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="bUY-e3-h1t"/>
@@ -988,6 +1095,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asO-aD-tZ5">
                                 <rect key="frame" x="0.0" y="586" width="375" height="81"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="81" id="6VX-d0-mVB"/>
+                                    <constraint firstAttribute="height" constant="81" id="fIk-WC-Omd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="oII-qQ-djP"/>
+                                    <constraint firstAttribute="width" constant="375" id="r8J-fE-zee"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Kazoo">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1000,6 +1113,8 @@
                                 <rect key="frame" x="0.0" y="432" width="375" height="81"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="81" id="PK7-w4-xmR"/>
+                                    <constraint firstAttribute="width" constant="375" id="Yov-3Z-rRg"/>
                                     <constraint firstAttribute="height" constant="81" id="zKM-8h-6pM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
@@ -1010,6 +1125,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hp-dv-Gvb">
                                 <rect key="frame" x="0.0" y="507" width="375" height="81"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="81" id="NUP-dI-LqE"/>
+                                    <constraint firstAttribute="width" constant="375" id="Thv-dX-TIh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="WcF-qi-y7k"/>
+                                    <constraint firstAttribute="height" constant="81" id="zIc-Cs-Fb6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
                                 <state key="normal" title="Trumpet">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1019,6 +1140,8 @@
                                 <rect key="frame" x="0.0" y="354" width="375" height="81"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="7bA-Md-J62"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="81" id="ExA-gO-Qbu"/>
                                     <constraint firstAttribute="height" constant="81" id="k6O-FI-sIN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="23"/>
@@ -1058,7 +1181,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="37"/>
                                 <state key="normal" title="Back To Start">
-                                    <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="BBf-Hj-bj7"/>
@@ -1117,9 +1240,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M09-Be-3c4">
-                                <rect key="frame" x="70" y="319" width="234" height="29"/>
+                                <rect key="frame" x="0.0" y="198" width="375" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="NZL-VU-olb"/>
+                                    <constraint firstAttribute="width" constant="375" id="bIn-Hf-Txj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="37"/>
-                                <state key="normal" title="Play Again?">
+                                <state key="normal" title="Press to Play Again!">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -1127,7 +1254,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Victory!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKw-G7-htm">
-                                <rect key="frame" x="89" y="133" width="197" height="57"/>
+                                <rect key="frame" x="89" y="133" width="178" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="zuI-TT-h47"/>
                                 </constraints>
@@ -1135,29 +1262,32 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logomakr_75MLnM" translatesAutoresizingMaskIntoConstraints="NO" id="j5V-en-fVo">
+                                <rect key="frame" x="58" y="287" width="240" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="M09-Be-3c4" firstAttribute="top" secondItem="dKw-G7-htm" secondAttribute="bottom" constant="8" symbolic="YES" id="84X-Ag-DPm"/>
                             <constraint firstItem="dKw-G7-htm" firstAttribute="leading" secondItem="rTz-uu-9wd" secondAttribute="leadingMargin" constant="73" id="MrC-xm-eZi"/>
-                            <constraint firstItem="U52-9b-cy5" firstAttribute="top" secondItem="M09-Be-3c4" secondAttribute="bottom" constant="319" id="QOv-uc-C83"/>
-                            <constraint firstItem="M09-Be-3c4" firstAttribute="centerY" secondItem="rTz-uu-9wd" secondAttribute="centerY" id="Svj-hb-R2q"/>
-                            <constraint firstItem="M09-Be-3c4" firstAttribute="centerX" secondItem="rTz-uu-9wd" secondAttribute="centerX" id="Yug-Iv-VGq"/>
-                            <constraint firstItem="dKw-G7-htm" firstAttribute="centerX" secondItem="M09-Be-3c4" secondAttribute="centerX" id="lGO-lS-yzl"/>
+                            <constraint firstItem="M09-Be-3c4" firstAttribute="leading" secondItem="rTz-uu-9wd" secondAttribute="leading" id="OsP-L8-U6K"/>
+                            <constraint firstAttribute="trailing" secondItem="M09-Be-3c4" secondAttribute="trailing" id="Xwg-4L-S8f"/>
                             <constraint firstItem="dKw-G7-htm" firstAttribute="top" secondItem="Axg-wT-ghM" secondAttribute="bottom" constant="113" id="vNH-jn-88P"/>
-                            <constraint firstItem="M09-Be-3c4" firstAttribute="leading" secondItem="rTz-uu-9wd" secondAttribute="leadingMargin" constant="54" id="xm7-wC-dYt"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TG-1X-ouh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6169" y="134"/>
+            <point key="canvasLocation" x="6168.8000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Logomakr_75MLnM" width="361" height="361"/>
         <image name="Logomakr_9Dxe5s" width="447" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ocs-4N-aSv"/>
-        <segue reference="JwT-wS-CgT"/>
+        <segue reference="iSm-jq-N5E"/>
+        <segue reference="0qs-pu-ROM"/>
     </inferredMetricsTieBreakers>
 </document>
