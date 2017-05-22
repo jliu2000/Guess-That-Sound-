@@ -60,5 +60,4 @@ class SoundFourViewController: UIViewController {
             playSoundButton.isHidden = true
         }
     }
-    
 }

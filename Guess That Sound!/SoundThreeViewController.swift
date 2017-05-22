@@ -60,5 +60,4 @@ class SoundThreeViewController: UIViewController {
             playSoundButton.isHidden = true
         }
     }
-
 }

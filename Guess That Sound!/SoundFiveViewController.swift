@@ -66,5 +66,4 @@ class SoundFiveViewController: UIViewController {
             playSoundButton.isHidden = true
         }
     }
-
 }
