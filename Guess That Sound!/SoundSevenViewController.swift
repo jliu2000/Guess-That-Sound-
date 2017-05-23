@@ -31,6 +31,7 @@ class SoundSevenViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
     @IBAction func playSoundSevenButton(_ sender: Any) {
         
         do
@@ -62,7 +63,5 @@ class SoundSevenViewController: UIViewController {
             playSoundButton.isHidden = true
         }
     }
-
-    
 }
 

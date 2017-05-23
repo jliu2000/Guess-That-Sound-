@@ -45,8 +45,9 @@ class SoundTwoViewController: UIViewController {
         audioBegin.play()
         timeLeft = 6
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(SoundTwoViewController.timerRunning), userInfo: nil, repeats: true)
-
+        
     }
+    
     func timerRunning (){
         timeLeft -= 1
         timerLabel.text = "Time Left: \(timeLeft)"
@@ -62,5 +63,4 @@ class SoundTwoViewController: UIViewController {
             playSoundButton.isHidden = true
         }
     }
-    
 }
